@@ -42,6 +42,10 @@
 		burpsuite
 		slack
 		brightnessctl
+		wezterm
+		grim
+		swappy
+		slurp
 	])
 
 	++
