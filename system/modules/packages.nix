@@ -49,6 +49,7 @@
 		swappy
 		slurp
 		sshfs
+		noto-fonts-monochrome-emoji
 	])
 
 	++
