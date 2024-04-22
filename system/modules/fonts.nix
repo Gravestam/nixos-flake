@@ -2,6 +2,7 @@
 
 {
 	fonts.packages = with pkgs; [
-		(nerdfonts.override { fonts = [ "FiraCode" "JetBrainsMono" ]; })
+		# (nerdfonts.override { fonts = [ "FiraCode" "JetBrainsMono" ]; })
+		nerdfonts
 	];
 }
