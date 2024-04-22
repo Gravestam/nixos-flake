@@ -35,6 +35,7 @@
 		pkgs.rofi-wayland
 		pkgs.swww
 		pkgs.mako
+		pkgs.udiskie
 
 		pkgs-unstable.alacritty
 	];

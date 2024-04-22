@@ -7,7 +7,7 @@
 		openssh.enable = true;
 		xserver = {
 			enable = true;
-			# videoDrivers = [ "nvidia" ];
+			videoDrivers = [ "nvidia" ];
 			layout = "us";
 			displayManager = {
 				sddm = {
@@ -17,5 +17,7 @@
 				lightdm.enable = false;
 			};
 		};
+		gvfs.enable = true;
+		udisks2.enable = true;
 	};
 }
