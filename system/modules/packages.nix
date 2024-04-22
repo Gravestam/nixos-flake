@@ -46,6 +46,7 @@
 		grim
 		swappy
 		slurp
+		sshfs
 	])
 
 	++
