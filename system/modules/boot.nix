@@ -7,5 +7,6 @@
 	boot.initrd.kernelModules = [ ];
 	boot.kernelModules = [ "kvm-amd" "nvidia" ];
 	boot.blacklistedKernelModules = [ "nouveau" ];
+	boot.kernelPackages = pkgs.linuxPackages_latest;
 	boot.extraModulePackages = [ ];
 }
