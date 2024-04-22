@@ -6,7 +6,9 @@
 	(with pkgs; [
 		bat
 		btop
+		nmap
 		eza
+		jq
 		fzf
 		git
 		lm_sensors
