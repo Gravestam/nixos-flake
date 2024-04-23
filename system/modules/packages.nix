@@ -47,5 +47,6 @@
 		pkgs.swappy
 		pkgs.slurp
 		pkgs.sshfs
+		pkgs.rofi-power-menu
 	];
 }
