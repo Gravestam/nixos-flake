@@ -28,7 +28,7 @@
 		pkgs.brave
 		pkgs.luajit
 		pkgs.go
-		pkgs.nodejs_21
+		pkgs.nodejs_20
 		pkgs.python3
 		pkgs.gcc_multi
 		pkgs.starship
@@ -48,5 +48,6 @@
 		pkgs.slurp
 		pkgs.sshfs
 		pkgs.rofi-power-menu
+		pkgs.signal-desktop
 	];
 }
