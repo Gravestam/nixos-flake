@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, pkgs-unstable, ... }:
 
 {
 	programs.hyprland = {
@@ -9,15 +9,14 @@
 		portalPackage = pkgs.xdg-desktop-portal-hyprland;
 	};
 
-	environment.systemPackages = with pkgs; [
-		hyprpaper
-		libnotify
-		qt5.qtwayland
-		qt6.qtwayland
-		swayidle
-		swaylock-effects
-		wlogout
-		wl-clipboard
+	environment.systemPackages = [
+		pkgs.hyprpaper
+		pkgs-unstable.hyprlock
+		pkgs.libnotify
+		pkgs.qt5.qtwayland
+		pkgs.qt6.qtwayland
+		pkgs.wlogout
+		pkgs.wl-clipboard
 	];
 
 	environment.sessionVariables = {

@@ -1,60 +1,51 @@
 { config, pkgs, pkgs-unstable, ... }:
 
 {
-	environment.systemPackages = 
-	
-	(with pkgs; [
-		bat
-		btop
-		nmap
-		eza
-		jq
-		fzf
-		git
-		lm_sensors
-		libsForQt5.qt5.qtquickcontrols2
-		libsForQt5.qt5.qtgraphicaleffects
-		libsForQt5.qt5.qtsvg
-		fastfetch
-		ripgrep
-		tldr
-		unzip
-		openssl
-		openssl.dev
-		pkg-config
-		wget
-		xfce.thunar
-		xdg-desktop-portal-gtk
-		xdg-desktop-portal-wlr
-		zip
-		brave
-		luajit
-		go
-		nodejs_21
-		python3
-		gcc_multi
-		starship
-		fd
-		waybar
-		rofi-wayland
-		swww
-		mako
-		udiskie
-		ranger
-		burpsuite
-		slack
-		brightnessctl
-		wezterm
-		grim
-		swappy
-		slurp
-		sshfs
-		noto-fonts-monochrome-emoji
-	])
-
-	++
-
-	(with pkgs-unstable; [
-		alacritty
-	]);
+	environment.systemPackages = [ 
+		pkgs.bat
+		pkgs.btop
+		pkgs.nmap
+		pkgs.eza
+		pkgs.jq
+		pkgs.fzf
+		pkgs.git
+		pkgs.lm_sensors
+		pkgs.libsForQt5.qt5.qtquickcontrols2
+		pkgs.libsForQt5.qt5.qtgraphicaleffects
+		pkgs.libsForQt5.qt5.qtsvg
+		pkgs.fastfetch
+		pkgs.ripgrep
+		pkgs.tldr
+		pkgs.unzip
+		pkgs.openssl
+		pkgs.openssl.dev
+		pkgs.pkg-config
+		pkgs.wget
+		pkgs.xfce.thunar
+		pkgs.xdg-desktop-portal-gtk
+		pkgs.xdg-desktop-portal-wlr
+		pkgs.zip
+		pkgs.brave
+		pkgs.luajit
+		pkgs.go
+		pkgs.nodejs_21
+		pkgs.python3
+		pkgs.gcc_multi
+		pkgs.starship
+		pkgs.fd
+		pkgs.waybar
+		pkgs.rofi-wayland
+		pkgs.mako
+		pkgs.udiskie
+		pkgs.ranger
+		pkgs.burpsuite
+		pkgs.slack
+		pkgs.brightnessctl
+		pkgs.wezterm
+		pkgs-unstable.alacritty
+		pkgs.grim
+		pkgs.swappy
+		pkgs.slurp
+		pkgs.sshfs
+	];
 }
