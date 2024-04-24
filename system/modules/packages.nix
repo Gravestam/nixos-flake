@@ -51,5 +51,6 @@
 		pkgs.spotify
 		pkgs.mpv
 		pkgs.ffmpeg
+		pkgs.xorg.xrandr
 	];
 }

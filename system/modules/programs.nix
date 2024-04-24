@@ -3,11 +3,10 @@
 {
 	xdg.portal = {
 		enable = true;
-		wlr.enable = false;
-		xdgOpenUsePortal = false;
 		extraPortals = [
 			pkgs.xdg-desktop-portal-gtk
 		];
+		config.common.defaultPortal = "xdg-desktop-portal-gtk";
 	};
 
 	programs = {

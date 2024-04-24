@@ -4,7 +4,6 @@
 	imports = [
 		./boot.nix
 		./hardware.nix
-		./awesome.nix
 		./fonts.nix
 		./internationalisation.nix
 		./misc.nix
