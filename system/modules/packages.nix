@@ -1,4 +1,4 @@
-{ config, pkgs, pkgs-unstable, ... }:
+{ config, pkgs, ... }:
 
 {
 	environment.systemPackages = [ 
@@ -43,7 +43,7 @@
 		pkgs.slack
 		pkgs.brightnessctl
 		pkgs.wezterm
-		pkgs-unstable.alacritty
+		pkgs.alacritty
 		pkgs.grim
 		pkgs.swappy
 		pkgs.slurp
@@ -56,5 +56,6 @@
 		pkgs.mpv
 		pkgs.ffmpeg
 		pkgs.swayimg
+		pkgs.steam
 	];
 }
