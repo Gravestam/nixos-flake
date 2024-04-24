@@ -4,7 +4,7 @@
 	imports = [
 		./boot.nix
 		./hardware.nix
-		./hyprland.nix
+		./awesome.nix
 		./fonts.nix
 		./internationalisation.nix
 		./misc.nix

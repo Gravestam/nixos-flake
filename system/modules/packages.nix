@@ -34,8 +34,7 @@
 		pkgs.gcc_multi
 		pkgs.starship
 		pkgs.fd
-		pkgs.waybar
-		pkgs.rofi-wayland
+		pkgs.rofi
 		pkgs.mako
 		pkgs.udiskie
 		pkgs.ranger
@@ -45,16 +44,12 @@
 		pkgs.wezterm
 		pkgs-unstable.alacritty
 		pkgs.grim
-		pkgs.swappy
-		pkgs.slurp
 		pkgs.sshfs
 		pkgs.rofi-power-menu
 		pkgs.signal-desktop
 		pkgs.bitwarden
 		pkgs.spotify
-		pkgs.wf-recorder
 		pkgs.mpv
 		pkgs.ffmpeg
-		pkgs.swayimg
 	];
 }
