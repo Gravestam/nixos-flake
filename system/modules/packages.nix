@@ -3,6 +3,7 @@
 {
 	environment.systemPackages = [ 
 		pkgs.bat
+		pkgs.xsel
 		pkgs.btop
 		pkgs.nmap
 		pkgs.eza
@@ -49,5 +50,11 @@
 		pkgs.sshfs
 		pkgs.rofi-power-menu
 		pkgs.signal-desktop
+		pkgs.bitwarden
+		pkgs.spotify
+		pkgs.wf-recorder
+		pkgs.mpv
+		pkgs.ffmpeg
+		pkgs.swayimg
 	];
 }
