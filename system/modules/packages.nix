@@ -3,6 +3,7 @@
 {
 	environment.systemPackages = [ 
 		pkgs.bat
+		pkgs.toybox
 		pkgs.xsel
 		pkgs.btop
 		pkgs.nmap
