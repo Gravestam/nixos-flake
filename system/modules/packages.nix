@@ -33,6 +33,7 @@
 		pkgs.luajit
 		pkgs.go
 		pkgs.nodejs_20
+		pkgs.yarn
 		pkgs.python3
 		pkgs.gcc_multi
 		pkgs.starship

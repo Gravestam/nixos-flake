@@ -20,6 +20,5 @@
 		./theme.nix
 		./users.nix
 		./virtualisation.nix
-		./dependencies.nix
 	];
 }
