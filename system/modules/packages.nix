@@ -40,6 +40,7 @@
 		pkgs.starship
 		pkgs.fd
 		pkgs.waybar
+		pkgs.mongodb-compass
 		pkgs.rofi-wayland
 		pkgs.swaynotificationcenter
 		pkgs.libnotify
