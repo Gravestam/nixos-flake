@@ -3,11 +3,13 @@
 {
 	environment.systemPackages = [ 
 		pkgs.bat
-		pkgs.toybox
 		pkgs.xsel
+		pkgs.unixtools.procps
+		pkgs.psmisc # pstree killall pstree.x11 pslog prtstat peekfd fuser
 		pkgs.btop
 		pkgs.nmap
 		pkgs.eza
+		pkgs.gnumake
 		pkgs.jq
 		pkgs.fzf
 		pkgs.git
@@ -37,7 +39,8 @@
 		pkgs.fd
 		pkgs.waybar
 		pkgs.rofi-wayland
-		pkgs.mako
+		pkgs.swaynotificationcenter
+		pkgs.libnotify
 		pkgs.udiskie
 		pkgs.ranger
 		pkgs.burpsuite
