@@ -11,6 +11,7 @@
 		pkgs.eza
 		pkgs.gnumake
 		pkgs.jq
+		pkgs.lshw
 		pkgs.fzf
 		pkgs.git
 		pkgs.lm_sensors

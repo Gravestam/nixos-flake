@@ -41,6 +41,13 @@
 			# accessible via `nvidia-settings`.
 			nvidiaSettings = true;
 
+			prime = {
+				sync.enable = true;
+
+				nvidiaBusId = "PCI:1:0:0";
+				amdgpuBusId = "PCI:7:0:0";
+			};
+
 			# Optionally, you may need to select the appropriate driver version for your specific GPU.
 			package = config.boot.kernelPackages.nvidiaPackages.stable;
 		};
