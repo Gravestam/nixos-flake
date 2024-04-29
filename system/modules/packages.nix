@@ -34,6 +34,7 @@
 		pkgs.go
 		pkgs.nodejs_20
 		pkgs.yarn
+		pkgs.pm2
 		pkgs.python3
 		pkgs.gcc_multi
 		pkgs.starship
