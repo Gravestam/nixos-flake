@@ -26,11 +26,14 @@
 		pkgs.openssl.dev
 		pkgs.pkg-config
 		pkgs.wget
+		pkgs.gimp-with-plugins
 		pkgs.xfce.thunar
+		pkgs.libreoffice-fresh
 		pkgs.xdg-desktop-portal-gtk
 		pkgs.xdg-desktop-portal-wlr
 		pkgs.zip
 		pkgs.brave
+		pkgs.firefox
 		pkgs.luajit
 		pkgs.go
 		pkgs.nodejs_20
