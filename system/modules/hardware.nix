@@ -11,7 +11,10 @@
 			enable = true;
 			driSupport = true;
 			driSupport32Bit = true;
-			extraPackages = [ pkgs.mesa.drivers ];
+			extraPackages = [ 
+				pkgs.mesa.drivers
+				pkgs.nvidia-vaapi-driver
+			];
 		};
 
 		nvidia = {

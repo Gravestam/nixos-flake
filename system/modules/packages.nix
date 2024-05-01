@@ -68,5 +68,6 @@
 		pkgs.ffmpeg
 		pkgs.swayimg
 		pkgs.steam
+		pkgs.obs-studio
 	];
 }
