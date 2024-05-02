@@ -70,5 +70,6 @@
 		pkgs.obs-studio
 		pkgs.mangohud
 		pkgs.protonup
+		pkgs.traceroute
 	];
 }
