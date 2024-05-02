@@ -67,7 +67,8 @@
 		pkgs.mpv
 		pkgs.ffmpeg
 		pkgs.swayimg
-		pkgs.steam
 		pkgs.obs-studio
+		pkgs.mangohud
+		pkgs.protonup
 	];
 }
