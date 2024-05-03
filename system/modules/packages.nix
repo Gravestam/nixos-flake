@@ -71,5 +71,6 @@
 		pkgs.mangohud
 		pkgs.protonup
 		pkgs.traceroute
+		pkgs.mongosh
 	];
 }
