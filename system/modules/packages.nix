@@ -61,7 +61,6 @@
 		pkgs.sshfs
 		pkgs.rofi-power-menu
 		pkgs.signal-desktop
-		pkgs.bitwarden
 		pkgs.spotify
 		pkgs.wf-recorder
 		pkgs.mpv
@@ -72,5 +71,7 @@
 		pkgs.protonup
 		pkgs.traceroute
 		pkgs.mongosh
+		pkgs.robo3t
+		pkgs.imagemagick
 	];
 }
