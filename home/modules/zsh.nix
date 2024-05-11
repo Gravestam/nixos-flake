@@ -7,7 +7,7 @@
 		syntaxHighlighting.enable = true;
 		# enableAutosuggestions = true;
 		history.size = 10000;
-		history.path = "${config.xdg.dataHome}/zsh/history";
+		history.path = "${config.xdg.dataHome}/.zsh_history";
 
 		shellAliases = 
 		let 
@@ -46,9 +46,4 @@
 		enableZshIntegration = true;
 	};
 
-	programs.git = {
-		enable = true;
-		userName = "Gravestam";
-		userEmail = "github@gravestam.site";
-	};
 }

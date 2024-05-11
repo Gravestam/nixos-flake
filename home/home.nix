@@ -1,5 +1,3 @@
-{ config, pkgs, pkgs-stable, lib, inputs, ...}: 
-
 {
 	imports = [
 		./modules

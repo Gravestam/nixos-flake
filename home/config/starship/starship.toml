@@ -1,0 +1,115 @@
+
+# ⊏ ⊐ ─ ■ ╭ ╰ ╼ ╾ ▶ ◀
+
+format = """
+[╭─](#565f89) $username$hostname [─](#565f89) $directory $git_branch $git_status$git_metrics
+[╰──](#565f89) $sudo$character
+"""
+
+right_format = """
+$status $time
+"""
+
+scan_timeout = 10
+add_newline = false
+
+[line_break]
+disabled = false
+
+[character]
+success_symbol = "[󰘧 ](bold #9ece6a)"
+error_symbol = "[󰘧 ](bold #f7768e)"
+vimcmd_symbol = "[󰘧 ](bold #e0af68)"
+format = "$symbol"
+
+[package]
+disabled = true
+
+[username]
+disabled = false
+style_user = "bold #9ece6a"
+style_root = "bold #9ece6a"
+format = "[$user]($style)"
+show_always = true
+
+[hostname]
+disabled = false
+ssh_only = true
+style = "bold #9ece6a"
+format = "@[$hostname]($style)"
+trim_at = ".companyname.com"
+
+[directory]
+disabled = false
+truncation_length = 3
+truncation_symbol = "…/"
+truncate_to_repo = false
+read_only = ""
+read_only_style = "red"
+home_symbol = "~"
+style = "#7aa2f7"
+format = "[$path]($style)[$read_only]($read_only_style)"
+
+[time]
+disabled = false
+use_12hr = false
+style = "bold #565f89"
+format = '[$time]($style)'
+time_format = "%T"
+utc_time_offset = "local"
+time_range = "-"
+
+[status]
+disabled = false
+style = "#f8f8f2"
+symbol = "[ $int](bold #f7768e)"
+success_symbol = "[](bold #9ece6a)"
+not_executable_symbol = "[ $int](bold #f7768e)"
+not_found_symbol = "[ $int](bold #e0af68)"
+sigint_symbol = "[ $int](bold #e0af68)"
+signal_symbol = "[ $int](bold #e0af68)"
+format = '[$symbol]($style)'
+map_symbol = true
+recognize_signal_code = true
+
+[sudo]
+disabled = false
+style = "bold #ff9e64"
+symbol = ""
+format = "[$symbol]($style) "
+
+[git_branch]
+disabled = false
+symbol = ""
+style = "bold #bb9af7"
+truncation_length = 4
+truncation_symbol = "..."
+ignore_branches = []
+format = "[$symbol $branch(:$remote_branch)]($style)"
+
+[git_commit]
+disabled = false
+commit_hash_length = 4
+tag_symbol = "🔖 "
+
+[git_status]
+disabled = false
+conflicted = "[󱃘](#f7768e) "
+ahead = "[ $count](#ff9e64) "
+diverged = "[ ${ahead_count} /  ${behind_count}](#ff9e64) "
+behind = "[ $count](#ff9e64) "
+up_to_date = "[](#9ece6a) "
+untracked = "[](#ff9e64) "
+stashed = "[](#ff9e64) "
+modified = "[](#ff9e64) "
+staged = '[$count](#9ece6a) '
+renamed = "[󰑕](#ff9e64) "
+deleted = "[󰆴](#f7768e) "
+format = '[\[ ](#bb9af7)$all_status$ahead_behind[\]](#bb9af7)'
+
+[git_metrics]
+disabled = false
+only_nonzero_diffs = true
+added_style = "#9ece6a"
+deleted_style = "#f7768e"
+format = '[\[ ](#bb9af7)[$added]($added_style)/[$deleted]($deleted_style)[ \]](#bb9af7)'

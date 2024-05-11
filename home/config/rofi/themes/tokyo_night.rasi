@@ -1,0 +1,124 @@
+* {
+	
+	//scheme: "Tokyo Night Dark"
+	base00: #1A1B26;
+	base01: #16161E;
+	base02: #2F3549;
+	base03: #444B6A;
+	base04: #787C99;
+	base05: #A9B1D6;
+	base06: #CBCCD1;
+	base07: #D5D6DB;
+	base08: #C0CAF5;
+	base09: #A9B1D6;
+	base0A: #0DB9D7;
+	base0B: #9ECE6A;
+	base0C: #B4F9F8;
+	base0D: #2AC3DE;
+	base0E: #BB9AF7;
+	base0F: #F7768E;
+
+	borderRadius: 5px;
+
+    //bg: rgba(36, 40, 59, 0.5);
+    bg: @base00;
+    hv: rgba(146, 116, 202, 1);
+    primary: rgba(197, 200, 198, 1);
+    ug: rgba(11, 36, 71, 1);
+    border-c: rgba(86, 95, 137, 0.5);
+    background-color: @bg;
+    //dark: @bg;
+    border: 0px;
+    kl: #7aa2f7;
+    black: #000000;
+
+    transparent: rgba(46,52,64,0);
+}
+
+window {
+    width: 800px;
+
+    orientation: horizontal;
+    location: center;
+    anchor: center;
+    transparency: "screenshot";
+    border-color: @base0D;
+    border: 2px;
+    border-radius: @borderRadius;
+    spacing: 0;
+    children: [ mainbox ];
+}
+
+mainbox {
+    spacing: 0;
+    children: [ inputbar, message, listview ];
+}
+
+inputbar {
+    padding: 10px;
+    border-radius: @borderRadius;
+}
+
+prompt {
+	color: @base0F;
+}
+
+entry {
+	color: @base09;
+	cursor: text;
+	cursor-width: 3px;
+}
+
+prompt {
+    margin: 0px 5px 0px 0px;
+}
+
+listview {
+    layout: vertical;
+    padding: 0px 10px 10px 10px;
+    lines: 8;
+    columns: 1;
+    dynamic: false;
+}
+
+element {
+    padding: 2px 5px 2px 5px;
+    vertical-align: 1;
+    color: @base09;
+    font: inherit;
+	border-radius: @borderRadius;
+
+	children: [ element-text, element-icon ];
+}
+
+element-icon {
+    background-color: inherit;
+    text-color: inherit;
+    size: 1.3em;
+}
+
+element-text {
+    background-color: inherit;
+    text-color: inherit;
+    vertical-align: 0.5;
+	highlight: bold underline italic;
+}
+
+element normal active {
+    background-color: @base0F;
+    color: @base01;
+}
+
+element normal urgent {
+    background-color: @base0F;
+}
+
+element selected.normal {
+    color: @base01;
+    background-color: @base04;
+}
+
+element selected.active {
+    color: @base01;
+    background-color: @base09;
+}
