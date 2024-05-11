@@ -1,6 +1,8 @@
 { config, pkgs, ... }:
 
 {
+	programs.zsh.enable = true;
+
 	users.users.master = {
 		isNormalUser = true;
 		shell = pkgs.zsh;
