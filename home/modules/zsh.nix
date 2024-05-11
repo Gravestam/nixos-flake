@@ -5,7 +5,7 @@
 
 		enableCompletion = true;
 		syntaxHighlighting.enable = true;
-		# enableAutosuggestions = true;
+		autosuggestion.enable = true;
 		history.size = 10000;
 		history.path = "${config.xdg.dataHome}/.zsh_history";
 
@@ -40,10 +40,4 @@
 			yarn_force_dir = "${config.xdg.dataHome}/projects/glimworks/retailer_config/yarn_force";
 		};
 	};
-
-	programs.starship = {
-		enable = true;
-		enableZshIntegration = true;
-	};
-
 }
