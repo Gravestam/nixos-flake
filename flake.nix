@@ -1,21 +1,41 @@
 {
 	description = "Gravestam NixOS";
 
-	# inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.11";
-	# inputs.nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
+	inputs = {
 
-	inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+		nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+		nixpkgs-stable.url = "github:NixOS/nixpkgs/nixos-23.11";
 
-	outputs = { self, nixpkgs, ... }@inputs:
+		home-manager = {
+			url = "github:nix-community/home-manager";
+			inputs.nixpkgs.follows = "nixpkgs";
+		};
+	};
+
+
+	outputs = { self, nixpkgs, nixpkgs-stable, home-manager, ... }@inputs:
 	let
 		lib = nixpkgs.lib;
 		system = "x86_64-linux";
 		pkgs = nixpkgs.legacyPackages.${system};
+		pkgs-stable = nixpkgs-stable.legacyPackages.${system};
 	in {
-		
+
 		nixosConfigurations.battlestation = lib.nixosSystem {
 			inherit system;
 			modules = [ ./system/configuration.nix ];
+			specialArgs = { 
+				inherit pkgs-stable;
+			};
+		};
+
+		homeConfigurations.master = home-manager.lib.homeManagerConfiguration {
+			inherit pkgs;
+			modules = [ ./home/home.nix ];
+			extraSpecialArgs = { 
+				inherit pkgs-stable;
+				inherit inputs;
+			};
 		};
 	};
 }

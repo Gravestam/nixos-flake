@@ -2,6 +2,7 @@
 
 {
 	environment.systemPackages = [ 
+		pkgs.home-manager
 		pkgs.bat # bat 
 		pkgs.xsel # xsel 
 		pkgs.unixtools.procps # pgrep kill ps pkill tload sysctl top free pidof watch pwait vmstat pmap slabtop w uptime pwdx 
@@ -34,7 +35,6 @@
 		pkgs.xdg-desktop-portal-gtk
 		pkgs.xdg-desktop-portal-wlr
 		pkgs.brave # brave 
-		pkgs.firefox # firefox 
 		pkgs.burpsuite
 		pkgs.gnumake # make 
 		pkgs.luajit # luajit-2.1.1693350652 luajit lua 

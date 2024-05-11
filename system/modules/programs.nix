@@ -33,11 +33,5 @@
 			enable = true;
 			defaultEditor = true;
 		};
-
-		zsh = {
-			enable = true;
-			autosuggestions.enable = true;
-			syntaxHighlighting.enable = true;
-		};
 	};
 }
