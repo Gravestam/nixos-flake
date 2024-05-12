@@ -11,9 +11,7 @@
 		pkgs.lshw # lshw 
 		pkgs.nmap # nping nmap ncat 
 		pkgs.traceroute # traceroute 
-		pkgs.eza # eza 
 		pkgs.fd # fd 
-		pkgs.fzf # fzf-tmux fzf fzf-share 
 		pkgs.ripgrep # rg 
 		pkgs.jq # jq 
 		pkgs.git # git-cvsserver git-http-backend git-jump git-upload-archive git-receive-pack git-credential-netrc scalar git-shell git git-upload-pack 
@@ -21,7 +19,6 @@
 		pkgs.libsForQt5.qt5.qtquickcontrols2
 		pkgs.libsForQt5.qt5.qtgraphicaleffects
 		pkgs.libsForQt5.qt5.qtsvg
-		pkgs.fastfetch # fastfetch flashfetch 
 		pkgs.tldr # tldr 
 		pkgs.zip # zipcloak zipnote zip zipsplit 
 		pkgs.unzip # unzipsfx unzip funzip zipgrep zipinfo 
@@ -54,7 +51,6 @@
 		pkgs.udiskie # udiskie-info udiskie-mount udiskie-umount udiskie 
 		pkgs.slack # slack 
 		pkgs.brightnessctl # brightnessctl 
-		pkgs.wezterm # wezterm sync-color-schemes wezterm-gui wezterm-mux-server strip-ansi-escapes generate-bidi 
 		pkgs.alacritty # alacritty 
 		pkgs.starship # starship 
 		pkgs.grim # grim 
