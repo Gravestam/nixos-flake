@@ -4,6 +4,7 @@
 {
 	imports = [
 		./config.nix
+		./alacritty.nix
 		./zsh.nix
 		./starship.nix
 		./fzf.nix

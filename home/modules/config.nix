@@ -1,7 +1,7 @@
 let configdir = ../config;
 in {
 	home.file = {
-		".config/alacritty".source = "${configdir}/alacritty";
+		# ".config/alacritty".source = "${configdir}/alacritty";
 		".config/bat".source = "${configdir}/bat";
 		".config/fastfetch".source = "${configdir}/fastfetch";
 		".config/hypr".source = "${configdir}/hypr";

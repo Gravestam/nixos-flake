@@ -10,10 +10,12 @@
 			url = "github:nix-community/home-manager";
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
+
+		nix-colors.url = "github:misterio77/nix-colors";
 	};
 
 
-	outputs = { self, nixpkgs, nixpkgs-stable, home-manager, ... }@inputs:
+	outputs = { self, nixpkgs, nixpkgs-stable, home-manager, nix-colors, ... }@inputs:
 	let
 		lib = nixpkgs.lib;
 		system = "x86_64-linux";
@@ -33,8 +35,9 @@
 			inherit pkgs;
 			modules = [ ./home/home.nix ];
 			extraSpecialArgs = { 
+				inherit system;
+				inherit nix-colors;
 				inherit pkgs-stable;
-				inherit inputs;
 			};
 		};
 	};
