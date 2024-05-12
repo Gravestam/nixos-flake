@@ -46,7 +46,6 @@
 		pkgs.mongosh # mongosh 
 		pkgs.rofi-wayland # rofi-sensible-terminal rofi rofi-theme-selector 
 		pkgs.rofi-power-menu # dmenu-power-menu rofi-power-menu 
-		pkgs.waybar # waybar 
 		pkgs.swaynotificationcenter # swaync-client swaync 
 		pkgs.libnotify # notify-send 
 		pkgs.udiskie # udiskie-info udiskie-mount udiskie-umount udiskie 

@@ -13,5 +13,6 @@
 		./fastfetch.nix
 		./wezterm.nix
 		./firefox.nix
+		./waybar.nix
 	];
 }
