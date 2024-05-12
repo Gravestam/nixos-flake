@@ -8,7 +8,7 @@ in {
 		".config/nvim".source = "${configdir}/nvim";
 		".config/ranger".source = "${configdir}/ranger";
 		".config/rofi".source = "${configdir}/rofi";
-		".config/starship.toml".source = "${configdir}/starship/starship.toml";
+		# ".config/starship.toml".source = "${configdir}/starship/starship.toml";
 		".config/swappy".source = "${configdir}/swappy";
 		".config/swaync".source = "${configdir}/swaync";
 		".config/tmux".source = "${configdir}/tmux";
