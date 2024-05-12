@@ -2,25 +2,6 @@
 
 let 
 	colors = config.colorScheme.colors;
-
-# scheme: "Tokyo Night Dark"
-# author: "Michaël Ball"
-# base00: "#1A1B26"
-# base01: "#16161E"
-# base02: "#2F3549"
-# base03: "#444B6A"
-# base04: "#787C99"
-# base05: "#A9B1D6"
-# base06: "#CBCCD1"
-# base07: "#D5D6DB"
-# base08: "#C0CAF5"
-# base09: "#A9B1D6"
-# base0A: "#0DB9D7"
-# base0B: "#9ECE6A"
-# base0C: "#B4F9F8"
-# base0D: "#2AC3DE"
-# base0E: "#BB9AF7"
-# base0F: "#F7768E"
 in {
 	programs.starship = {
 		enable = true;
@@ -90,16 +71,16 @@ in {
 				symbol = "[ $int](bold #${colors.base0F})";
 				success_symbol = "[](bold #${colors.base0B})";
 				not_executable_symbol = "[ $int](bold #${colors.base0F})";
-				not_found_symbol = "[ $int](bold #e0af68)";
-				sigint_symbol = "[ $int](bold #e0af68)";
-				signal_symbol = "[ $int](bold #e0af68)";
+				not_found_symbol = "[ $int](bold #${colors.base0C})";
+				sigint_symbol = "[ $int](bold #${colors.base0C})";
+				signal_symbol = "[ $int](bold #${colors.base0C})";
 				format = "[$symbol]($style)";
 				map_symbol = true;
 				recognize_signal_code = true;
 			};
 			sudo = {
 				disabled = false;
-				style = "bold #ff9e64";
+				style = "bold #${colors.base0C}";
 				symbol = "";
 				format = "[$symbol]($style) ";
 			};
@@ -120,24 +101,24 @@ in {
 			git_status = {
 				disabled = false;
 				conflicted = "[󱃘](#${colors.base0F}) ";
-				ahead = "[ $count](#ff9e64)";
-				diverged = "[ \${ahead_count} /  \${behind_count}](#ff9e64)";
-				behind = "[ $count](#ff9e64)";
+				ahead = "[ $count](#${colors.base0C})";
+				diverged = "[ \${ahead_count} /  \${behind_count}](#${colors.base0C})";
+				behind = "[ $count](#${colors.base0C})";
 				up_to_date = "[](#${colors.base0B})";
-				untracked = "[](#ff9e64)";
-				stashed = "[](#ff9e64)";
-				modified = "[](#ff9e64)";
+				untracked = "[](#${colors.base0C})";
+				stashed = "[](#${colors.base0C})";
+				modified = "[](#${colors.base0C})";
 				staged = "[$count](#${colors.base0B})";
-				renamed = "[󰑕](#ff9e64)";
+				renamed = "[󰑕](#${colors.base0C})";
 				deleted = "[󰆴](#${colors.base0F})";
-				format = "[─ ](#${colors.base03})$all_status$ahead_behind[ ─](#${colors.base03})";
+				format = "[](#${colors.base03})$all_status$ahead_behind[](#${colors.base03})";
 			};
 			git_metrics = {
 				disabled = false;
 				only_nonzero_diffs = true;
 				added_style = "#${colors.base0B}";
 				deleted_style = "#${colors.base0F}";
-				format = "[─ ](#${colors.base03})[$added]($added_style)/[$deleted]($deleted_style)[ ─](#${colors.base03})";
+				format = "[](#${colors.base03})[$added]($added_style)/[$deleted]($deleted_style)[](#${colors.base03})";
 			};
 		};
 	};
