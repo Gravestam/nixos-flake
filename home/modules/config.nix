@@ -13,6 +13,6 @@ in {
 		".config/swaync".source = "${configdir}/swaync";
 		".config/tmux".source = "${configdir}/tmux";
 		".config/waybar".source = "${configdir}/waybar";
-		".config/wezterm".source = "${configdir}/wezterm";
+		# ".config/wezterm".source = "${configdir}/wezterm";
 	};
 }

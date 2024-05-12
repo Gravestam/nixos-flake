@@ -52,8 +52,6 @@
 		pkgs.udiskie # udiskie-info udiskie-mount udiskie-umount udiskie 
 		pkgs.slack # slack 
 		pkgs.brightnessctl # brightnessctl 
-		pkgs.alacritty # alacritty 
-		pkgs.starship # starship 
 		pkgs.grim # grim 
 		pkgs.swappy # swappy 
 		pkgs.slurp # slurp 
