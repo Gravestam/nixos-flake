@@ -7,15 +7,15 @@
 		syntaxHighlighting.enable = true;
 		autosuggestion.enable = true;
 		history.size = 10000;
-		history.path = "${config.xdg.dataHome}/.zsh_history";
+		history.path = "${config.xdg.dataHome}/zsh/history";
 
 		shellAliases = 
 		let 
 			nixConfigDir = "~/.system-dotfiles";
 		in {
 			system_update = "sudo nix flake update ${nixConfigDir}";
-			system_rebuild = "sudo nixos-rebuild switch --flake ${nixConfigDir}";
-			home_rebuild = "home-manager switch --flake ${nixConfigDir}";
+			system_rebuild = "nh os switch ${nixConfigDir}";
+			home_rebuild = "nh home switch ${nixConfigDir}"; #"home-manager switch --flake ${nixConfigDir}";
 			conf = "nvim ${nixConfigDir}";
 			l = "exa -lhg --icons --time-style long-iso --sort=type -L2";
 			ll = "exa -lahg --icons --time-style long-iso --sort=type -L2";

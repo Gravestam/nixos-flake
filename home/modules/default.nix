@@ -12,5 +12,6 @@
 		./git.nix
 		./fastfetch.nix
 		./wezterm.nix
+		./firefox.nix
 	];
 }

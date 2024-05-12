@@ -2,7 +2,8 @@
 
 {
 	environment.systemPackages = [ 
-		pkgs.home-manager
+		pkgs.home-manager # home-manager
+		pkgs.nh # nh
 		pkgs.bat # bat 
 		pkgs.xsel # xsel 
 		pkgs.unixtools.procps # pgrep kill ps pkill tload sysctl top free pidof watch pwait vmstat pmap slabtop w uptime pwdx 
