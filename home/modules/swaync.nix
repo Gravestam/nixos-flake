@@ -1,9 +1,10 @@
-{ config; ... } =
+{ config, ... }:
+
 let 
-colors = config.colorScheme.colors;
+	colors = config.colorScheme.colors;
 in {
 
-	home.file = { ".config/swaync/configSchema.json" = ''
+	home.file = { ".config/swaync/configSchema.json" = { text = ''
 
 		{
 		  "$schema": "https://json-schema.org/draft/2020-12/schema",
@@ -628,6 +629,7 @@ in {
 		  }
 		}
 	''; executable = false; };
+	};
 
 	services.swaync = {
 		enable = true;
