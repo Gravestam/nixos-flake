@@ -15,5 +15,6 @@
 		./firefox.nix
 		./waybar.nix
 		./hyprland.nix
+		./rofi-wayland.nix
 	];
 }
