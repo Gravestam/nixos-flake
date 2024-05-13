@@ -229,4 +229,22 @@ in {
 			};
 		};
 	};
+
+	services.hyprpaper = {
+		enable = true;
+
+		settings = {
+			splash = false;
+
+			preload = [ 
+				"~/Pictures/wallpapers/neon-highway-outrun-3840x2160-16079.jpg"
+				"~/Pictures/wallpapers/outrun-neon-dark-background-purple-3840x2160-4523.jpg"
+			];
+
+			wallpaper = [
+				"eDP-1,~/Pictures/wallpapers/neon-highway-outrun-3840x2160-16079.jpg"
+				"DP-2,~/Pictures/wallpapers/outrun-neon-dark-background-purple-3840x2160-4523.jpg"
+			];
+		};
+	};
 }
