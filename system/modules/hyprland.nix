@@ -8,7 +8,6 @@
 	};
 
 	environment.systemPackages = [
-		pkgs.hyprpaper
 		pkgs.qt5.qtwayland
 		pkgs.libsForQt5.qt5.qtwayland
 		pkgs.qt6.qtwayland
