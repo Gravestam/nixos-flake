@@ -16,5 +16,6 @@
 		./waybar.nix
 		./hyprland.nix
 		./rofi-wayland.nix
+		./swaync.nix
 	];
 }
