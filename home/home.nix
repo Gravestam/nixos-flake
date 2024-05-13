@@ -6,9 +6,10 @@
 		./modules
 	];
 	
-	# colorScheme = nix-colors.colorSchemes.tokyo-night-dark;
+	colorScheme = nix-colors.colorSchemes.tokyo-night-dark;
 	# colorScheme = nix-colors.colorSchemes.gruvbox-dark-medium;
-	colorScheme = nix-colors.colorSchemes.catppuccin-mocha;
+	# colorScheme = nix-colors.colorSchemes.catppuccin-mocha;
+	# colorScheme = nix-colors.colorSchemes.dracula;
 	
 	home = {
 		username = "master";
