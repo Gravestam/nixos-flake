@@ -78,7 +78,7 @@ in {
 
 				# System tray
 				"tray" = {
-					icon-size = 21;
+					icon-size = 15;
 					spacing = 12;
 				};
 

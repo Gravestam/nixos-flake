@@ -6,7 +6,6 @@
 		./modules
 	];
 	
-	# colorScheme = nix-colors.colorSchemes.tokyo-night-storm;
 	colorScheme = nix-colors.colorSchemes.tokyo-night-dark;
 	# colorScheme = nix-colors.colorSchemes.gruvbox-dark-medium;
 	
