@@ -1,3 +1,5 @@
+{ config, ...}:
+
 let configdir = ../config;
 in {
 	home.file = {
@@ -5,7 +7,7 @@ in {
 		".config/bat".source = "${configdir}/bat";
 		".config/fastfetch".source = "${configdir}/fastfetch";
 		".config/hypr".source = "${configdir}/hypr";
-		".config/nvim".source = "${configdir}/nvim";
+		# ".config/nvim".source = "${configdir}/nvim";
 		".config/ranger".source = "${configdir}/ranger";
 		".config/rofi".source = "${configdir}/rofi";
 		# ".config/starship.toml".source = "${configdir}/starship/starship.toml";
