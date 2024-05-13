@@ -14,5 +14,6 @@
 		./wezterm.nix
 		./firefox.nix
 		./waybar.nix
+		./hyprland.nix
 	];
 }

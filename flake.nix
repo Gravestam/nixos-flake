@@ -12,10 +12,11 @@
 		};
 
 		nix-colors.url = "github:misterio77/nix-colors";
+
+		hyprland.url = "github:hyprwm/Hyprland";
 	};
 
-
-	outputs = { self, nixpkgs, nixpkgs-stable, home-manager, nix-colors, ... }@inputs:
+	outputs = { self, nixpkgs, nixpkgs-stable, home-manager, nix-colors, hyprland, ... }@inputs:
 	let
 		lib = nixpkgs.lib;
 		system = "x86_64-linux";
@@ -38,6 +39,7 @@
 				inherit system;
 				inherit nix-colors;
 				inherit pkgs-stable;
+				inherit hyprland;
 			};
 		};
 	};

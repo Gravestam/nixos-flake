@@ -1,8 +1,9 @@
-{ pkgs, nix-colors, ... }:
+{ pkgs, nix-colors, hyprland, ... }:
 
 {
 	imports = [
 		nix-colors.homeManagerModules.default
+        hyprland.homeManagerModules.default
 		./modules
 	];
 	
