@@ -1,7 +1,9 @@
+{ ... }:
+
 {
-	programs.git = {
-		enable = true;
-		userName = "Gravestam";
-		userEmail = "github@gravestam.site";
-	};
+  programs.git = {
+    enable = true;
+    userName = "Gravestam";
+    userEmail = "github@gravestam.site";
+  };
 }

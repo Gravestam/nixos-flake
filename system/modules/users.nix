@@ -1,17 +1,17 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 {
-	programs.zsh.enable = true;
+  programs.zsh.enable = true;
 
-	users.users.master = {
-		isNormalUser = true;
-		shell = pkgs.zsh;
-		extraGroups = [
-			"wheel"
-			"networkmanager"
-			"qemu"
-			"kvm"
-			"libvirtd"
-		];
-	};
+  users.users.master = {
+    isNormalUser = true;
+    shell = pkgs.zsh;
+    extraGroups = [
+      "wheel"
+      "networkmanager"
+      "qemu"
+      "kvm"
+      "libvirtd"
+    ];
+  };
 }
