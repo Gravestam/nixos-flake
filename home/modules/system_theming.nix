@@ -1,11 +1,28 @@
-{ pkgs, ... }:
+{
+  config,
+  pkgs,
+  nix-colors,
+  ...
+}:
 
+let
+  inherit (nix-colors.lib-contrib { inherit pkgs; }) gtkThemeFromScheme;
+in
 {
   gtk = {
     enable = true;
-		cursorTheme = { package = pkgs.catppuccin-cursors; name = "mochaDark"; };
-		iconTheme = { package = pkgs.papirus-icon-theme; name = "Papirus-Dark"; };
-		theme = { package = pkgs.adw-gtk3; name = "adw-gtk3-dark"; };
+    cursorTheme = {
+      package = pkgs.catppuccin-cursors;
+      name = "mochaDark";
+    };
+    iconTheme = {
+      package = pkgs.papirus-icon-theme;
+      name = "Papirus-Dark";
+    };
+    theme = {
+      package = gtkThemeFromScheme { scheme = config.colorScheme; };
+      name = "${config.colorScheme.slug}";
+    };
   };
 
   qt = {
