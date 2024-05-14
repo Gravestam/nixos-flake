@@ -5,6 +5,7 @@ let
 
   # terminal = "wezterm start --always-new-process";
   terminal = "alacritty";
+	browser = "firefox";
   menu = "rofi -show drun";
   webapps = "~/.config/hypr/scripts/rofi-webapps";
   websearch = "~/.config/hypr/scripts/rofi-websearch";
@@ -93,6 +94,7 @@ in
       bind = [
         # Application bindings
         "$mainMod, Return, exec, ${terminal}"
+				"$mainMod, B, exec, ${browser}"
         "$mainMod $mod1, Return, exec, ${terminal} --class=Terminal-Float"
         "$mainMod, Space, exec, ${menu}"
         "$mainMod $mod1, Space, exec, ${webapps}"

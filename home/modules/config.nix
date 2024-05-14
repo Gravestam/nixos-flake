@@ -9,5 +9,6 @@ in
     ".config/hypr/scripts".source = "${configdir}/hypr/scripts";
     ".config/swappy".source = "${configdir}/swappy";
     ".config/tmux".source = "${configdir}/tmux";
+    ".config/ranger".source = "${configdir}/ranger";
   };
 }
