@@ -6,7 +6,7 @@ in
 {
   home.file = {
     # ".config/alacritty".source = "${configdir}/alacritty";
-    ".config/bat".source = "${configdir}/bat";
+    # ".config/bat".source = "${configdir}/bat";
     ".config/fastfetch".source = "${configdir}/fastfetch";
     ".config/hypr/scripts".source = "${configdir}/hypr/scripts";
     # ".config/nvim".source = "${configdir}/nvim";

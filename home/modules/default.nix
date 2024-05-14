@@ -17,5 +17,6 @@
     ./rofi-wayland.nix
     ./swaync.nix
     ./ranger.nix
+		./bat.nix
   ];
 }
