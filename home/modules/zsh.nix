@@ -39,11 +39,11 @@
         tmk = "tmux kill-session -t";
         tmka = "tmux kill-server";
         startHyprland = "dbus-run-session Hyprland";
-        ai = "${config.xdg.dataHome}/projects/node-ai/main.js shell";
-        yarn_force_dir = "${config.xdg.dataHome}/projects/glimworks/retailer_config/yarn_force";
+        ai = "~/projects/node-ai/main.js shell";
+        yarn_force_dir = "~/projects/glimworks/retailer_config/yarn_force";
 				shithost = "TERM=xterm-256color";
       };
 
-    initExtra = "[ -f ~/.fzf_colors ] && source ~/.fzf_colors";
+    initExtra = "[ -f ~/.fzf_colors ] && source ~/.fzf_colors\n[ -f ~/private_aliases/one ] && source ~/private_aliases/one";
   };
 }
