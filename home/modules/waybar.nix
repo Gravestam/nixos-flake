@@ -203,7 +203,7 @@ in
         };
 
         "custom/distro" = {
-          format = "";
+          format = " NixOS";
           tooltip = false;
         };
 
@@ -423,14 +423,14 @@ in
       	}
 
       	#custom-distro {
-      		color: @base0E;
+      		color: @base08;
       		background: unset;
 
       		padding-right: 16px;
       	}
 
       	#custom-notification {
-      		color: @base0E;
+      		color: @base0D;
 
       		padding-right: 15px;
       	}

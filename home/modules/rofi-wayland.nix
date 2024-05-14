@@ -51,9 +51,12 @@ in
         		base0E: #${colors.base0E};
         		base0F: #${colors.base0F};
 
+						bg:  @base00;
+						text-light: @base05;
+						text-dark: @base01;
+
         		borderRadius: 5px;
 
-        		bg: @base00;
         		background-color: @bg;
         		border: 0px;
 
@@ -89,7 +92,7 @@ in
         	}
 
         	entry {
-        		color: @base09;
+        		color: @text-light;
         		cursor: text;
         		cursor-width: 3px;
         	}
@@ -109,7 +112,7 @@ in
         	element {
         		padding: 2px 5px 2px 5px;
         		vertical-align: 1;
-        		color: @base09;
+        		color: @text-light;
         		font: inherit;
         		border-radius: @borderRadius;
 
@@ -131,7 +134,7 @@ in
 
         	element normal active {
         		background-color: @base0F;
-        		color: @base01;
+        		color: @text-dark;
         	}
 
         	element normal urgent {
@@ -139,13 +142,13 @@ in
         	}
 
         	element selected.normal {
-        		color: @base01;
-        		background-color: @base04;
+        		color: @text-dark;
+        		background-color: @base07;
         	}
 
         	element selected.active {
-        		color: @base01;
-        		background-color: @base09;
+        		color: @text-dark;
+        		background-color: @base0C;
         	}
 
       '';

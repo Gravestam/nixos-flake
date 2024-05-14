@@ -727,7 +727,7 @@ in
       	@define-color base0F #${colors.base0F};
 
       	@define-color cc-bg @base00;
-      	@define-color noti-border-color @base0E;
+      	@define-color noti-border-color @base0D;
       	@define-color noti-bg @base00;
       	@define-color noti-bg-opaque @base00;
       	@define-color noti-bg-darker @base00;
@@ -736,7 +736,7 @@ in
       	@define-color noti-bg-focus @base05;
       	@define-color noti-close-bg @base05;
       	@define-color noti-close-bg-hover @base05;
-      	@define-color text-color @base09;
+      	@define-color text-color @base05;
       	@define-color text-color-disabled @base02;
       	@define-color bg-selected @base00;
 
@@ -1099,7 +1099,7 @@ in
       	  background: @cc-bg;
       	  color: @text-color;
       	  border-radius: 5px;
-      	  border: 1px solid @base0E;
+      	  border: 1px solid @base0D;
       	  margin-bottom: 5px;
       	  margin-top: 5px;
       	  margin-right: 5px;
