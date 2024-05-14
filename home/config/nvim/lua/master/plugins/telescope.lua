@@ -41,6 +41,7 @@ return {
 		keymap.set("n", "<leader>fc", tsb.grep_string, { desc = "Telescope [F]ind [C]ursor in cwd" })
 		keymap.set("n", "<leader>fb", tsb.buffers, { desc = "Telescope [F]ind [B]uffers" })
 		keymap.set("n", "<leader>fk", tsb.keymaps, { desc = "Telescope [F]ind [K]eymaps" })
+		keymap.set("n", "<leader>ft", tsb.filetypes, { desc = "Telescope [F]ind [K]filetypes" })
 
 		keymap.set("n", "<leader>/", function()
 			tsb.current_buffer_fuzzy_find(require("telescope.themes").get_dropdown({

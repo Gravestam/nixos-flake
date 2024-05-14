@@ -27,7 +27,10 @@ in
 
     settings = {
 
-      exec = [ "${waybar_start}/bin/start" ];
+      exec = [
+        "${waybar_start}/bin/start"
+        "swaync-client -rs"
+      ];
 
       monitor = [
         "eDP-1, 3840x2160@120, 0x0, 2"

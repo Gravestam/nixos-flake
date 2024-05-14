@@ -42,5 +42,7 @@
         ai = "${config.xdg.dataHome}/projects/node-ai/main.js shell";
         yarn_force_dir = "${config.xdg.dataHome}/projects/glimworks/retailer_config/yarn_force";
       };
+
+    initExtra = "[ -f ~/.fzf_colors ] && source ~/.fzf_colors";
   };
 }

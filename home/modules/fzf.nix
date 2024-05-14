@@ -1,6 +1,18 @@
 { config, ... }:
 
+let
+  colors = config.colorScheme.colors;
+in
 {
+  home.file = {
+    ".fzf_colors" = {
+      text = ''
+        export FZF_DEFAULT_OPTS="--color bg:#${colors.base00},bg+:#${colors.base00},fg:#${colors.base09},fg+:#${colors.base0A},header:#${colors.base0D},hl:#${colors.base0D},hl+:#${colors.base0D},marker:#${colors.base0D}"
+      '';
+      executable = false;
+    };
+  };
+
   programs.fzf = {
     enable = true;
     enableZshIntegration = true;
@@ -9,16 +21,5 @@
     fileWidgetOptions = [
       "--preview 'bat --color=always --style=header,grid --line-range :500 {}' --preview-window=right:60%:wrap"
     ];
-
-    colors = {
-      fg = "#${config.colorScheme.colors.base09}";
-      bg = "#${config.colorScheme.colors.base00}";
-      hl = "#${config.colorScheme.colors.base0D}";
-      marker = "#${config.colorScheme.colors.base0D}";
-      header = "#${config.colorScheme.colors.base0D}";
-      "fg+" = "#${config.colorScheme.colors.base0A}";
-      "bg+" = "#${config.colorScheme.colors.base00}";
-      "hl+" = "#${config.colorScheme.colors.base0D}";
-    };
   };
 }

@@ -15,7 +15,7 @@ return {
 				bottom_search = false,
 				command_palette = false,
 			},
-			-- cmdline = { view = "cmdline" }, 
+			cmdline = { view = "cmdline" }, 
 			routes = { -- enables the @recording message
 				{
 					view = "notify",
