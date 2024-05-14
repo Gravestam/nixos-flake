@@ -7,7 +7,7 @@ in
   home.file = {
     ".fzf_colors" = {
       text = ''
-        export FZF_DEFAULT_OPTS="--color bg:#${colors.base00},bg+:#${colors.base00},fg:#${colors.base09},fg+:#${colors.base0A},header:#${colors.base0D},hl:#${colors.base0D},hl+:#${colors.base0D},marker:#${colors.base0D}"
+        export FZF_DEFAULT_OPTS="--color bg:#${colors.base00},bg+:#${colors.base00},fg:#${colors.base05},fg+:#${colors.base09},header:#${colors.base0D},hl:#${colors.base0B},hl+:#${colors.base09},marker:#${colors.base0D}"
       '';
       executable = false;
     };
