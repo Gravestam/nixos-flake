@@ -3,7 +3,8 @@
 let
   colors = config.colorScheme.colors;
 
-  terminal = "wezterm start --always-new-process";
+  # terminal = "wezterm start --always-new-process";
+  terminal = "alacritty";
   menu = "rofi -show drun";
   webapps = "~/.config/hypr/scripts/rofi-webapps";
   websearch = "~/.config/hypr/scripts/rofi-websearch";
