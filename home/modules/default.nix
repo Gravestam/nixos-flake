@@ -20,5 +20,6 @@
 		./bat.nix
 		./rbw.nix
 		./system_theming.nix
+		./nvim.nix
   ];
 }

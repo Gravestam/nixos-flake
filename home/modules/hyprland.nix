@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, nix-colors, ... }:
 
 let
   colors = config.colorScheme.colors;
@@ -18,6 +18,23 @@ let
     sleep 0.2
     waybar &
   '';
+
+  inherit (nix-colors.lib-contrib { inherit pkgs; }) nixWallpaperFromScheme;
+
+  wallpaperPathTop = nixWallpaperFromScheme {
+    scheme = config.colorScheme;
+    width = 3840;
+    height = 2160;
+    logoScale = 10.0;
+  };
+
+  wallpaperPathBottom = nixWallpaperFromScheme {
+    scheme = config.colorScheme;
+    width = 3840;
+    height = 1100;
+    logoScale = 5.0;
+  };
+
 in
 {
   wayland.windowManager.hyprland = {
@@ -30,6 +47,7 @@ in
       exec = [
         "${waybar_start}/bin/start"
         "swaync-client -rs"
+				"systemctl --user restart hyprpaper.service"
       ];
 
       monitor = [
@@ -238,13 +256,17 @@ in
       splash = false;
 
       preload = [
-        "~/Pictures/wallpapers/neon-highway-outrun-3840x2160-16079.jpg"
-        "~/Pictures/wallpapers/outrun-neon-dark-background-purple-3840x2160-4523.jpg"
+        # "~/Pictures/wallpapers/neon-highway-outrun-3840x2160-16079.jpg"
+        # "~/Pictures/wallpapers/outrun-neon-dark-background-purple-3840x2160-4523.jpg"
+        "${wallpaperPathTop}"
+				"${wallpaperPathBottom}"
       ];
 
       wallpaper = [
-        "eDP-1,~/Pictures/wallpapers/neon-highway-outrun-3840x2160-16079.jpg"
-        "DP-2,~/Pictures/wallpapers/outrun-neon-dark-background-purple-3840x2160-4523.jpg"
+        # "eDP-1,~/Pictures/wallpapers/neon-highway-outrun-3840x2160-16079.jpg"
+        # "DP-2,~/Pictures/wallpapers/outrun-neon-dark-background-purple-3840x2160-4523.jpg"
+        "eDP-1,${wallpaperPathTop}"
+        "DP-2,${wallpaperPathBottom}"
       ];
     };
   };
