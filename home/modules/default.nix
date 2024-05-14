@@ -19,5 +19,6 @@
     ./ranger.nix
 		./bat.nix
 		./rbw.nix
+		./system_theming.nix
   ];
 }
