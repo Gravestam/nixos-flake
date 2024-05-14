@@ -18,5 +18,6 @@
     ./swaync.nix
     ./ranger.nix
 		./bat.nix
+		./rbw.nix
   ];
 }
