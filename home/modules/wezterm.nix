@@ -11,32 +11,32 @@ in
     colorSchemes = {
       nix-colors = {
         ansi = [
-          "#${colors.base00}"
-          "#${colors.base0F}"
+          "#${colors.base03}"
+          "#${colors.base08}"
           "#${colors.base0B}"
-          "#${colors.base09}"
-          "#${colors.base0D}"
-          "#${colors.base0C}"
-          "#${colors.base0E}"
           "#${colors.base0A}"
+          "#${colors.base0D}"
+          "#${colors.base09}"
+          "#${colors.base0C}"
+          "#${colors.base07}"
         ];
         brights = [
-          "#${colors.base03}"
-          "#${colors.base0F}"
+          "#${colors.base04}"
+          "#${colors.base08}"
           "#${colors.base0B}"
           "#${colors.base09}"
           "#${colors.base0D}"
           "#${colors.base0C}"
           "#${colors.base0E}"
-          "#${colors.base0A}"
+          "#${colors.base07}"
         ];
         background = "#${colors.base00}";
-        cursor_bg = "#${colors.base09}";
-        cursor_border = "#${colors.base09}";
+        cursor_bg = "#${colors.base06}";
+        cursor_border = "#${colors.base06}";
         cursor_fg = "#${colors.base00}";
-        foreground = "#${colors.base09}";
-        selection_bg = "#${colors.base02}";
-        selection_fg = "#${colors.base09}";
+        foreground = "#${colors.base05}";
+        selection_bg = "#${colors.base04}";
+        selection_fg = "#${colors.base05}";
       };
     };
 
