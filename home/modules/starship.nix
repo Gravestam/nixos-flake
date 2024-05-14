@@ -16,9 +16,9 @@ in
       };
 
       format = lib.concatStrings [
-        "[╭─](#${colors.base03}) $username$hostname [─](#${colors.base03}) $directory $git_branch $git_status $git_metrics"
+        "[╭─](#${colors.base04}) $username$hostname [─](#${colors.base04}) $directory $git_branch $git_status $git_metrics"
         "\n"
-        "[╰──](#${colors.base03}) $sudo$character"
+        "[╰──](#${colors.base04}) $sudo$character"
       ];
 
       right_format = lib.concatStrings [
@@ -64,7 +64,7 @@ in
       time = {
         disabled = false;
         use_12hr = false;
-        style = "bold #${colors.base03}";
+        style = "bold #${colors.base04}";
         format = "[$time]($style)";
         time_format = "%T";
         utc_time_offset = "local";
@@ -107,23 +107,23 @@ in
         disabled = false;
         conflicted = "[󱃘](#${colors.base0F}) ";
         ahead = "[ $count](#${colors.base0C})";
-        diverged = "[ \${ahead_count} /  \${behind_count}](#${colors.base0C})";
+        diverged = "[ \${ahead_count} /  \${behind_count}](#${colors.base0C}) ";
         behind = "[ $count](#${colors.base0C})";
         up_to_date = "[](#${colors.base0B})";
-        untracked = "[](#${colors.base0C})";
-        stashed = "[](#${colors.base0C})";
-        modified = "[](#${colors.base0C})";
-        staged = "[$count](#${colors.base0B})";
-        renamed = "[󰑕](#${colors.base0C})";
-        deleted = "[󰆴](#${colors.base0F})";
-        format = "[](#${colors.base03})$all_status$ahead_behind[](#${colors.base03})";
+        untracked = "[](#${colors.base0C}) ";
+        stashed = "[](#${colors.base0C}) ";
+        modified = "[](#${colors.base0C}) ";
+        staged = "[$count](#${colors.base0B}) ";
+        renamed = "[󰑕](#${colors.base0C}) ";
+        deleted = "[󰆴](#${colors.base0F}) ";
+        format = ''[\[ ](#${colors.base04})$all_status$ahead_behind[ \]](#${colors.base04})'';
       };
       git_metrics = {
         disabled = false;
         only_nonzero_diffs = true;
         added_style = "#${colors.base0B}";
         deleted_style = "#${colors.base0F}";
-        format = "[](#${colors.base03})[$added]($added_style)/[$deleted]($deleted_style)[](#${colors.base03})";
+        format = ''[\[ ](#${colors.base04})[$added]($added_style)/[$deleted]($deleted_style)[ \]](#${colors.base04})'';
       };
     };
   };
