@@ -65,5 +65,6 @@
     pkgs.imagemagick # stream magick-script mogrify magick compare conjure MagickWand-config display identify MagickCore-config Magick++-config animate import montage convert composite
     pkgs.obs-studio # obs-ffmpeg-mux obs
     pkgs.protonup-ng # protonup
+    pkgs.inkscape-with-extensions
   ];
 }
