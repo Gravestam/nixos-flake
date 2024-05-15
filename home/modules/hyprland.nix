@@ -1,11 +1,16 @@
-{ config, pkgs, nix-colors, ... }:
+{
+  config,
+  pkgs,
+  nix-colors,
+  ...
+}:
 
 let
   colors = config.colorScheme.colors;
 
   # terminal = "wezterm start --always-new-process";
   terminal = "alacritty";
-	browser = "firefox";
+  browser = "firefox";
   menu = "rofi -show drun";
   webapps = "~/.config/hypr/scripts/rofi-webapps";
   websearch = "~/.config/hypr/scripts/rofi-websearch";
@@ -21,14 +26,18 @@ let
     waybar &
   '';
 
+  nixWallpaperFromSchemeCustom = import ./wallpaper.nix { inherit pkgs; };
+
   inherit (nix-colors.lib-contrib { inherit pkgs; }) nixWallpaperFromScheme;
 
-  wallpaperPathTop = nixWallpaperFromScheme {
-    scheme = config.colorScheme;
-    width = 3840;
-    height = 2160;
-    logoScale = 10.0;
-  };
+  # wallpaperPathTop = nixWallpaperFromScheme {
+  #   scheme = config.colorScheme;
+  #   width = 3840;
+  #   height = 2160;
+  #   logoScale = 10.0;
+  # };
+
+  wallpaperPathTop = nixWallpaperFromSchemeCustom { scheme = config.colorScheme; };
 
   wallpaperPathBottom = nixWallpaperFromScheme {
     scheme = config.colorScheme;
@@ -36,7 +45,6 @@ let
     height = 1100;
     logoScale = 5.0;
   };
-
 in
 {
   wayland.windowManager.hyprland = {
@@ -49,7 +57,7 @@ in
       exec = [
         "${waybar_start}/bin/start"
         "swaync-client -rs"
-				"systemctl --user restart hyprpaper.service"
+        "systemctl --user restart hyprpaper.service"
       ];
 
       monitor = [
@@ -94,7 +102,7 @@ in
       bind = [
         # Application bindings
         "$mainMod, Return, exec, ${terminal}"
-				"$mainMod, B, exec, ${browser}"
+        "$mainMod, B, exec, ${browser}"
         "$mainMod $mod1, Return, exec, ${terminal} --class=Terminal-Float"
         "$mainMod, Space, exec, ${menu}"
         "$mainMod $mod1, Space, exec, ${webapps}"
@@ -262,7 +270,7 @@ in
         # "~/Pictures/wallpapers/neon-highway-outrun-3840x2160-16079.jpg"
         # "~/Pictures/wallpapers/outrun-neon-dark-background-purple-3840x2160-4523.jpg"
         "${wallpaperPathTop}"
-				"${wallpaperPathBottom}"
+        "${wallpaperPathBottom}"
       ];
 
       wallpaper = [
