@@ -6,8 +6,7 @@
   logoColor2 ? scheme.palette.base0D,
   logoColor3 ? scheme.palette.base0B,
   logoColor4 ? scheme.palette.base0F,
-  logoColor5 ? scheme.palette.base0A,
-  test ? scheme.palette.base05,
+  logoColor5 ? scheme.palette.base03,
 }:
 pkgs.stdenv.mkDerivation {
   name = "generated-nix-wallpaper-${scheme.slug}.png";
