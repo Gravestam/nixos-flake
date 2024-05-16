@@ -4,10 +4,8 @@
   bg1 ? scheme.palette.base01,
   bg2 ? scheme.palette.base02,
   bg3 ? scheme.palette.base03,
-
   text_quoteColor ? scheme.palette.base0C,
   text_nameColor ? scheme.palette.base0B,
-
   skull_mainColor ? "000000",
   skull_sword_bladeColor ? scheme.palette.base09,
   skull_sword_handleColor ? scheme.palette.base0A,
@@ -16,6 +14,7 @@
   skull_hat_liningColor ? scheme.palette.base0D,
   skull_hat_logoColor ? scheme.palette.base08,
 
+	nameText ? "master@battlestation",
 }:
 pkgs.stdenv.mkDerivation {
   name = "generated-nix-wallpaper-${scheme.slug}.png";
@@ -223,14 +222,14 @@ pkgs.stdenv.mkDerivation {
                y="609.60315"
                style="font-style:normal;font-variant:normal;font-weight:800;font-stretch:normal;font-family:'JetBrainsMono Nerd Font Mono';-inkscape-font-specification:'JetBrainsMono Nerd Font Mono Ultra-Bold';fill:#${text_quoteColor};stroke-width:1.08406">&quot;If at first you don't succeed, destroy all evidence that you tried.&quot;</tspan></text><text
              xml:space="preserve"
-             style="font-style:normal;font-variant:normal;font-weight:800;font-stretch:normal;font-size:92.647px;font-family:'JetBrainsMono Nerd Font Mono';-inkscape-font-specification:'JetBrainsMono Nerd Font Mono Ultra-Bold';fill:#${text_nameColor};stroke:none;stroke-width:1.33626"
+             style="font-style:normal;font-variant:normal;font-weight:800;font-stretch:normal;font-size:52.647px;font-family:'JetBrainsMono Nerd Font Mono';-inkscape-font-specification:'JetBrainsMono Nerd Font Mono Ultra-Bold';fill:#${text_nameColor};stroke:none;stroke-width:1.33626"
              x="72.866806"
              y="2088.6106"
              id="text85"><tspan
                id="tspan85"
                x="72.866806"
                y="2088.6106"
-               style="stroke-width:1.33626">Gravestam</tspan></text></g></svg>
+               style="stroke-width:1.33626">${nameText}</tspan></text></g></svg>
     '';
   };
   buildInputs = with pkgs; [ inkscape ];
