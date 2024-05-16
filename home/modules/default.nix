@@ -21,5 +21,8 @@
 		./rbw.nix
 		./system_theming.nix
 		./nvim.nix
+		./colorScheme.nix
+		./home-options.nix
+		./packages.nix
   ];
 }
