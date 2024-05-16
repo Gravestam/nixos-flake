@@ -78,10 +78,6 @@ in
           max-length = 25;
           rewrite = {
             "" = "Do shit...";
-            zsh = "Terminal";
-            wezterm = "Terminal";
-            eza = "Terminal";
-            nvim = "NeoVim";
           };
           separate-outputs = false;
         };
