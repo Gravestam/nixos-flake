@@ -180,6 +180,8 @@ in
         "$mainMod, mouse:273, resizewindow"
       ];
 
+      windowrulev2 = [ "float, class:^(Terminal-Float)$" ];
+
       input = {
         kb_layout = "us, se";
         kb_options = "grp:alt_shift_toggle";
@@ -267,15 +269,11 @@ in
       splash = false;
 
       preload = [
-        # "~/Pictures/wallpapers/neon-highway-outrun-3840x2160-16079.jpg"
-        # "~/Pictures/wallpapers/outrun-neon-dark-background-purple-3840x2160-4523.jpg"
         "${wallpaperPathTop}"
         "${wallpaperPathBottom}"
       ];
 
       wallpaper = [
-        # "eDP-1,~/Pictures/wallpapers/neon-highway-outrun-3840x2160-16079.jpg"
-        # "DP-2,~/Pictures/wallpapers/outrun-neon-dark-background-purple-3840x2160-4523.jpg"
         "eDP-1,${wallpaperPathTop}"
         "DP-2,${wallpaperPathBottom}"
       ];
