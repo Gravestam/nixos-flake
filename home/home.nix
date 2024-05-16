@@ -6,6 +6,8 @@
     ./modules
   ];
 
+	programs.home-manager.enable = true;
+
   home = {
     username = "master";
     homeDirectory = "/home/master";

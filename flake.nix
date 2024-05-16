@@ -29,7 +29,6 @@
       pkgs-stable = nixpkgs-stable.legacyPackages.${system};
     in
     {
-
       nixosConfigurations.battlestation = lib.nixosSystem {
         inherit system;
         modules = [ ./system/configuration.nix ];
