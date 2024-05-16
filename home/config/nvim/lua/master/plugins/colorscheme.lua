@@ -10,20 +10,20 @@
 -- 	end,
 -- }
 
--- return {
--- 	"catppuccin/nvim",
--- 	priority = 1000, -- make sure this loads asap...
--- 	config = function()
---
--- 		require("catppuccin").setup({
--- 			flavor = "mocha" -- latte, frappe, macchiato, mocha
--- 		});
---
--- 		vim.cmd("colorscheme catppuccin")
--- 	end,
--- }
-
 return {
+	"catppuccin/nvim",
+	priority = 1000, -- make sure this loads asap...
+	config = function()
 
-	vim.cmd("source ~/.config/nvim/theme/nix_colors.vim")
+		require("catppuccin").setup({
+			flavor = "mocha" -- latte, frappe, macchiato, mocha
+		});
+
+		vim.cmd("colorscheme catppuccin")
+	end,
 }
+
+-- return {
+--
+-- 	vim.cmd("source ~/.config/nvim/theme/nix_colors.vim")
+-- }
