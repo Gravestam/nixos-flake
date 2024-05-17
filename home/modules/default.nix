@@ -24,5 +24,6 @@
 		./colorScheme.nix
 		./home-options.nix
 		./packages.nix
+		./foot.nix
   ];
 }
