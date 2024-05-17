@@ -9,7 +9,7 @@ let
   colors = config.colorScheme.colors;
 
   # terminal = "wezterm start --always-new-process";
-  terminal = "foot";
+  terminal = "footclient --window-size-chars=110x30";
   browser = "firefox";
   menu = "rofi -show drun";
   webapps = "~/.config/hypr/scripts/rofi-webapps";
@@ -103,7 +103,8 @@ in
         # Application bindings
         "$mainMod, Return, exec, ${terminal}"
         "$mainMod, B, exec, ${browser}"
-        "$mainMod $mod1, Return, exec, ${terminal} --class=Terminal-Float"
+        # "$mainMod $mod1, Return, exec, ${terminal} --class=Terminal-Float"
+        "$mainMod $mod1, Return, exec, ${terminal} --app-id=Terminal-Float"
         "$mainMod, Space, exec, ${menu}"
         "$mainMod $mod1, Space, exec, ${webapps}"
         "$mainMod $mod1, J, exec, ${websearch}"

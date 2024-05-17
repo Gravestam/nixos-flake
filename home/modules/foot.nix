@@ -6,13 +6,14 @@ in
 {
   programs.foot = {
     enable = true;
+		server.enable = true;
 
     settings = {
 
       main = {
         term = "xterm-256color";
         font = "JetBrains Mono Nerd Font Mono:size=11";
-        initial-window-size-chars = "110x30";
+				initial-window-size-chars="110x30";
         pad = "10x10";
       };
 
