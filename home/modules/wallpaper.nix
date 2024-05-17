@@ -6,34 +6,47 @@
   bg3 ? scheme.palette.base03,
   bg4 ? scheme.palette.base00,
 
-  text_quoteColor ? scheme.palette.base0C,
-  text_nameColor ? scheme.palette.base0B,
-
   skull_hat_logoColor_1 ? scheme.palette.base0D,
   skull_hat_logoColor_2 ? scheme.palette.base0B,
   skull_hat_logoColor_3 ? scheme.palette.base08,
-  skull_hat_nameColor ? scheme.palette.base0C,
+  skull_hat_nameColor ? scheme.palette.base05,
 
   skull_faceColor ? scheme.palette.base05,
   skull_teethColor ? scheme.palette.base06,
   skull_hat_liningColor ? scheme.palette.base0D,
 
-	corne_c_key_face ? scheme.palette.base03,
-	corne_c_key_back ? scheme.palette.base01,
-	corne_c_key_left ? scheme.palette.base02,
-	corne_c_key_right ? scheme.palette.base02,
-	corne_c_key_front ? scheme.palette.base02,
+	# Toned down keyboard
+	# corne_c_key_face ? scheme.palette.base03,
+	# corne_c_key_back ? scheme.palette.base01,
+	# corne_c_key_left ? scheme.palette.base02,
+	# corne_c_key_right ? scheme.palette.base02,
+	# corne_c_key_front ? scheme.palette.base02,
+	# corne_c_pcb ? scheme.palette.base00,
+	# corne_c_case ? scheme.palette.base02,
+	# corne_c_led_cover ? scheme.palette.base04,
+	# corne_t_led_cover ? "0.4",
 
-	corne_c_pcb ? scheme.palette.base00,
-	corne_c_case ? scheme.palette.base02,
-	corne_c_led_cover ? scheme.palette.base04,
-	corne_t_led_cover ? "0.4",
+	# Colored keyboard
+	corne_c_key_face ? scheme.palette.base0D,
+	corne_c_key_back ? scheme.palette.base02,
+	corne_c_key_left ? scheme.palette.base03,
+	corne_c_key_right ? scheme.palette.base03,
+	corne_c_key_front ? scheme.palette.base03,
+	corne_c_pcb ? "000000",
+	corne_c_case ? scheme.palette.base00,
+	corne_c_led_cover ? scheme.palette.base0A,
+	corne_t_led_cover ? "0.75",
 
+	corne_oled_bg ? scheme.palette.base05,
 	cornne_text_left ? "Fuck",
 	cornne_text_right ? "You",
 
+  text_quoteColor ? scheme.palette.base0C,
+	quoteText ? ''"If at first you don't succeed, destroy all evidence that you tried."'',
+
+  text_nameColor ? scheme.palette.base0B,
   nameText ? "master@battlestation",
-	quoteText ? ''"If at first you don't succeed, destroy all evidence that you tried."''
+
 }:
 pkgs.stdenv.mkDerivation {
   name = "generated-nix-wallpaper-${scheme.slug}.png";
@@ -126,7 +139,7 @@ pkgs.stdenv.mkDerivation {
              id="layer1-0"
              style="display:inline;fill:#000000"
              transform="translate(-4.6212234,-0.50478175)"><rect
-               style="fill:#${bg1};stroke:none;stroke-width:35.7333;stroke-linejoin:bevel;paint-order:stroke fill markers"
+               style="fill:#${bg2};stroke:none;stroke-width:35.7333;stroke-linejoin:bevel;paint-order:stroke fill markers"
                id="rect1"
                width="6965.7573"
                height="4794.4019"
@@ -134,12 +147,12 @@ pkgs.stdenv.mkDerivation {
                y="-1222.6248"
                clip-path="url(#clipPath101)"
                inkscape:label="bottom_right_section" /><path
-               style="fill:#${bg4};stroke:none;stroke-width:19.154;stroke-linejoin:bevel;paint-order:stroke fill markers"
+               style="fill:#${bg3};stroke:none;stroke-width:19.154;stroke-linejoin:bevel;paint-order:stroke fill markers"
                d="M 2062.718,2438.0621 3986.8713,2430.4656 2943.0289,462.20084 Z"
                id="path3"
                clip-path="url(#clipPath90)"
                inkscape:label="bottom_right_triangle" /><rect
-               style="fill:#${bg2};stroke:none;stroke-width:27.3285;stroke-linejoin:bevel;paint-order:stroke fill markers"
+               style="fill:#${bg1};stroke:none;stroke-width:27.3285;stroke-linejoin:bevel;paint-order:stroke fill markers"
                id="rect2"
                width="5109.9937"
                height="2934.2402"
@@ -150,7 +163,7 @@ pkgs.stdenv.mkDerivation {
                inkscape:transform-center-y="-205.81961"
                clip-path="url(#clipPath104)"
                inkscape:label="top_left_section" /><path
-               style="fill:#${bg3};stroke:none;stroke-width:45.5286;stroke-linejoin:bevel;paint-order:stroke fill markers"
+               style="fill:#${bg4};stroke:none;stroke-width:45.5286;stroke-linejoin:bevel;paint-order:stroke fill markers"
                d="M 1350.5198,4141.6434 -17.470823,-39.130709 3314.6851,2447.0017 Z"
                id="path4"
                clip-path="url(#clipPath73)"
@@ -230,7 +243,7 @@ pkgs.stdenv.mkDerivation {
                  id="g93"
                  inkscape:label="nice!nano"
                  transform="matrix(6.2745694e-4,-0.18545111,0.18545111,6.2745694e-4,2078.4858,-1003.0374)"><path
-                   style="fill:#${bg1};stroke-width:1.65363"
+                   style="fill:#${corne_oled_bg};stroke-width:1.65363"
                    d="m 2255.5481,-2296.062 v -270.3681 h 637.4735 637.4735 v 270.3681 270.3681 h -637.4735 -637.4735 z"
                    id="path82"
                    inkscape:label="display"
@@ -904,7 +917,7 @@ pkgs.stdenv.mkDerivation {
                  id="g93-1"
                  inkscape:label="nice!nano"
                  transform="matrix(6.2745694e-4,-0.18545111,0.18545111,6.2745694e-4,2078.4858,-1003.0374)"><path
-                   style="fill:#${bg1};stroke-width:1.65363"
+                   style="fill:#${corne_oled_bg};stroke-width:1.65363"
                    d="m 2255.5481,-2296.062 v -270.3681 h 637.4735 637.4735 v 270.3681 270.3681 h -637.4735 -637.4735 z"
                    id="path82-9"
                    inkscape:label="display"
