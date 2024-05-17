@@ -7,8 +7,8 @@
   # colorScheme = nix-colors.colorSchemes.gruvbox-dark-medium;
   # colorScheme = nix-colors.colorSchemes.gruvbox-dark-hard;
   # colorScheme = nix-colors.colorSchemes.gruvbox-dark-pale;
-  # colorScheme = nix-colors.colorSchemes.catppuccin-mocha;
-  colorScheme = nix-colors.colorSchemes.nord;
+  colorScheme = nix-colors.colorSchemes.catppuccin-mocha;
+  # colorScheme = nix-colors.colorSchemes.nord;
   # colorScheme = nix-colors.colorSchemes.ayu-dark;
   # colorScheme = nix-colors.colorSchemes.black-metal-dark-funeral;
   # colorScheme = nix-colors.colorSchemes.black-metal-immortal;
