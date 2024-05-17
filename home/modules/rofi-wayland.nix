@@ -15,7 +15,7 @@ in
         		display-run: "All the things";
         		display-window: "Shit opened...";
         		show-icons: true;
-        		terminal: "alacritty";
+        		terminal: "foot";
         		icon-theme: "Papirus-Dark";
         		matching: "fuzzy";
         		click-to-exit: true;

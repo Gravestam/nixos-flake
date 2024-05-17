@@ -9,7 +9,7 @@ let
   colors = config.colorScheme.colors;
 
   # terminal = "wezterm start --always-new-process";
-  terminal = "alacritty";
+  terminal = "foot";
   browser = "firefox";
   menu = "rofi -show drun";
   webapps = "~/.config/hypr/scripts/rofi-webapps";
