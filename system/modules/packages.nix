@@ -26,7 +26,6 @@
     pkgs.openssl # c_rehash openssl
     pkgs.pkg-config # pkg-config
     pkgs.wget # wget
-    pkgs.gimp-with-plugins # gimp-2.10 gimptool-2.0 gimp-console-2.10 gimp-test-clipboard-2.0 gimp gimp-console
     pkgs.xfce.thunar # thunar Thunar thunar-settings
     pkgs.libreoffice-fresh # simpress soffice unopkg smath swriter sbase libreoffice sdraw scalc
     pkgs.xdg-desktop-portal-gtk

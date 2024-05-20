@@ -209,6 +209,10 @@ in
         allow_tearing = false;
       };
 
+			cursor = {
+				hide_on_key_press = true;
+			};
+
       decoration = {
 
         rounding = 3;
@@ -258,7 +262,6 @@ in
         disable_hyprland_logo = true;
         disable_splash_rendering = true;
         mouse_move_focuses_monitor = false;
-        hide_cursor_on_key_press = true;
       };
     };
   };
