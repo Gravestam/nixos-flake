@@ -4,6 +4,8 @@
   environment.systemPackages = [
     pkgs.home-manager # home-manager
     pkgs.nh # nh
+		pkgs.lsof # lsof
+    pkgs.gdb # gdbserver gcore gdb-add-index gdb
     pkgs.bat # bat
     pkgs.xsel # xsel
     pkgs.unixtools.procps # pgrep kill ps pkill tload sysctl top free pidof watch pwait vmstat pmap slabtop w uptime pwdx
@@ -39,7 +41,8 @@
     pkgs.pkgs.nixfmt-rfc-style # nixfmt
     pkgs.nodejs_20 # npx corepack node npm
     pkgs.pm2 # pm2-dev pm2-runtime pm2 pm2-docker
-    pkgs.yarn # yarn yarnpkg
+    pkgs.corepack # yarn yarnpkg pnpx pnpm
+    pkgs.nodePackages_latest.node-gyp # node-gyp
     pkgs.python3 # idle3.11 python3.11-config python3.11 pydoc3.11 pydoc3 python3 python-config python 2to3-3.11 2to3 python3-config idle pydoc idle3
     pkgs.gcc_multi # ld strings ranlib elfedit cpp c++ dwp nm cc g++ gcc addr2line readelf c++filt ld.gold strip objcopy ld.bfd size as ar objdump gprof
     pkgs.mongodb-compass

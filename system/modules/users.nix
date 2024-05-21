@@ -9,9 +9,6 @@
     extraGroups = [
       "wheel"
       "networkmanager"
-      "qemu"
-      "kvm"
-      "libvirtd"
     ];
   };
 }
