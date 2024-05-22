@@ -11,5 +11,6 @@
     pkgs.signal-desktop # signal-desktop
     pkgs.spotify
     pkgs.slack # slack
+		pkgs.gimp
   ];
 }
