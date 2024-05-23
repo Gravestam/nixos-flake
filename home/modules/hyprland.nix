@@ -30,13 +30,6 @@ let
 
   inherit (nix-colors.lib-contrib { inherit pkgs; }) nixWallpaperFromScheme;
 
-  # wallpaperPathTop = nixWallpaperFromScheme {
-  #   scheme = config.colorScheme;
-  #   width = 3840;
-  #   height = 2160;
-  #   logoScale = 10.0;
-  # };
-
   wallpaperPathTop = nixWallpaperFromSchemeCustom { scheme = config.colorScheme; };
 
   wallpaperPathBottom = nixWallpaperFromScheme {
@@ -213,7 +206,8 @@ in
         "col.active_border" = "rgb(${colors.base0D}) rgb(${colors.base03}) rgb(${colors.base0D}) 180deg";
         "col.inactive_border" = "rgb(${colors.base03})";
 
-        layout = "master";
+        # layout = "master";
+        layout = "dwindle";
 
         allow_tearing = false;
       };
