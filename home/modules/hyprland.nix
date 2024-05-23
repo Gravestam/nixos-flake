@@ -63,6 +63,8 @@ in
       monitor = [
         "eDP-1, 3840x2160@120, 0x0, 2"
         "DP-2, 3840x1100@60, 0x1080, 2"
+        # "HDMI-A-1, 3840x2160@60, 1920x1080, 2"
+        "HDMI-A-1, 3840x2160@60, 1920x0, 1"
       ];
 
       workspace = [
@@ -82,6 +84,13 @@ in
         "13,monitor:DP-2"
         "14,monitor:DP-2"
         "15,monitor:DP-2"
+
+        "16,monitor:HDMI-A-1"
+        "17,monitor:HDMI-A-1"
+        "18,monitor:HDMI-A-1"
+        "19,monitor:HDMI-A-1"
+        "20,monitor:HDMI-A-1"
+        "21,monitor:HDMI-A-1"
       ];
 
       "$resizeStep" = 20;
@@ -209,9 +218,9 @@ in
         allow_tearing = false;
       };
 
-			cursor = {
-				hide_on_key_press = true;
-			};
+      cursor = {
+        hide_on_key_press = true;
+      };
 
       decoration = {
 
@@ -280,6 +289,7 @@ in
       wallpaper = [
         "eDP-1,${wallpaperPathTop}"
         "DP-2,${wallpaperPathBottom}"
+				"HDMI-A-1,${wallpaperPathTop}"
       ];
     };
   };

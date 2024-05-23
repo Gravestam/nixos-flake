@@ -279,6 +279,44 @@ in
           };
         };
       };
+
+      external = {
+        name = "external";
+        layer = "top";
+        position = "right";
+        height = 0;
+        width = 0;
+        output = [ "HDMI-A-1" ];
+
+        modules-left = [ ];
+
+        modules-center = [ "hyprland/workspaces" ];
+
+        modules-right = [ ];
+
+        # Workspaces
+        "hyprland/workspaces" = {
+          on-click = "activate";
+          active-only = true;
+          all-outputs = false;
+          format = "{name}";
+          format-icons = {
+            default = " ";
+            active = " ";
+            urgent = " ";
+          };
+          persistent-workspaces = {
+            HDMI-A-1 = [
+              16
+              17
+              18
+              19
+              20
+              21
+            ];
+          };
+        };
+      };
     };
 
     style = ''
@@ -339,7 +377,7 @@ in
       		border: none;
       	}
 
-      	window.left #workspaces {
+      	window.left #workspaces, window.external #workspaces {
       		padding: 5px 0px;
       	}
 
@@ -358,7 +396,7 @@ in
       		transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
       	}
 
-      	window.left #workspaces button {
+      	window.left #workspaces button, window.external #workspaces button {
       		min-height: 30px;
       		min-width: unset;
       	}
@@ -376,7 +414,7 @@ in
       		min-width: 50px;
       	}
 
-      	window.left #workspaces button.active {
+      	window.left #workspaces button.active, window.external #workspaces button.active {
       		min-height: 45px;
       	}
 
