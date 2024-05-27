@@ -93,7 +93,7 @@ in
         disabled = false;
         symbol = "";
         style = "bold #${colors.base0E}";
-        truncation_length = 6;
+        truncation_length = 15;
         truncation_symbol = "...";
         ignore_branches = [ ];
         format = "[$symbol $branch(:$remote_branch)]($style)";

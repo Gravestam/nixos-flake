@@ -14,7 +14,7 @@ return {
 
 		telescope.setup({
 			defaults = {
-				path_display = { "smart" }, -- paths will be truncated
+				-- path_display = { "smart" }, -- paths will be truncated
 				mappings = {
 					i = {
 						["<C-up>"] = actions.move_selection_previous,
