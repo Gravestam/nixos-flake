@@ -67,6 +67,7 @@ in
       	config.window_background_opacity = 1
 
       	config.front_end = "WebGpu"
+				config.font_shaper = "Harfbuzz"
 
       	config.font = wezterm.font("JetBrains Mono Nerd Font Mono")
       	config.font_size = 11.0

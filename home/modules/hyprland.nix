@@ -84,6 +84,8 @@ in
         "19,monitor:HDMI-A-1"
         "20,monitor:HDMI-A-1"
         "21,monitor:HDMI-A-1"
+
+				"special:scratch,gapsout:60,on-created-empty:${terminal}"
       ];
 
       "$resizeStep" = 20;
@@ -133,6 +135,9 @@ in
         # Move to next/previous workspace on current monitor
         "$mainMod, T, workspace, r+1"
         "$mainMod, S, workspace, r-1"
+
+				# Special workspace
+				"$mainMod, J, togglespecialworkspace, scratch"
 
         # Switch workspaces
         "$mainMod, 1, workspace, 1"
