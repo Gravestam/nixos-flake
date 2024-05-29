@@ -13,5 +13,11 @@
     pkgs.slack # slack
     pkgs.gimp
     pkgs.qalculate-gtk
+    pkgs.inkscape-with-extensions
+    pkgs.obs-studio # obs-ffmpeg-mux obs
+    pkgs.imagemagick # stream magick-script mogrify magick compare conjure MagickWand-config display identify MagickCore-config Magick++-config animate import montage convert composite
+    pkgs.mpv # mpv_identify.sh mpv umpv
+    pkgs.ffmpeg # ffprobe ffplay ffmpeg
+    pkgs.wf-recorder # wf-recorder
   ];
 }

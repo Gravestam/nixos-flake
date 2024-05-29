@@ -85,7 +85,7 @@ in
         "20,monitor:HDMI-A-1"
         "21,monitor:HDMI-A-1"
 
-				"special:scratch,gapsout:60,on-created-empty:${terminal}"
+        "special:scratch,gapsout:60,on-created-empty:${terminal}"
       ];
 
       "$resizeStep" = 20;
@@ -136,8 +136,8 @@ in
         "$mainMod, T, workspace, r+1"
         "$mainMod, S, workspace, r-1"
 
-				# Special workspace
-				"$mainMod, J, togglespecialworkspace, scratch"
+        # Special workspace
+        "$mainMod, J, togglespecialworkspace, scratch"
 
         # Switch workspaces
         "$mainMod, 1, workspace, 1"
@@ -230,6 +230,7 @@ in
           size = 5;
           passes = 4;
           new_optimizations = true;
+					xray = true;
         };
 
         drop_shadow = "yes";
@@ -288,7 +289,7 @@ in
       wallpaper = [
         "eDP-1,${wallpaperPathTop}"
         "DP-2,${wallpaperPathBottom}"
-				"HDMI-A-1,${wallpaperPathTop}"
+        "HDMI-A-1,${wallpaperPathTop}"
       ];
     };
   };

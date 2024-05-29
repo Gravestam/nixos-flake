@@ -53,13 +53,8 @@
     pkgs.swappy # swappy
     pkgs.slurp # slurp
     pkgs.sshfs # mount.fuse.sshfs sshfs mount.sshfs
-    pkgs.wf-recorder # wf-recorder
-    pkgs.mpv # mpv_identify.sh mpv umpv
-    pkgs.ffmpeg # ffprobe ffplay ffmpeg
     pkgs.swayimg # swayimg
-    pkgs.imagemagick # stream magick-script mogrify magick compare conjure MagickWand-config display identify MagickCore-config Magick++-config animate import montage convert composite
-    pkgs.obs-studio # obs-ffmpeg-mux obs
     pkgs.protonup-ng # protonup
-    pkgs.inkscape-with-extensions
+		pkgs.linuxHeaders
   ];
 }
