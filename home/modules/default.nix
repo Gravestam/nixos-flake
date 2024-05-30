@@ -25,5 +25,6 @@
 		./home-options.nix
 		./packages.nix
 		./foot.nix
+		./bitwarden.nix
   ];
 }
