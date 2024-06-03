@@ -19,5 +19,6 @@
     pkgs.mpv # mpv_identify.sh mpv umpv
     pkgs.ffmpeg # ffprobe ffplay ffmpeg
     pkgs.wf-recorder # wf-recorder
+		pkgs.vscode
   ];
 }

@@ -55,6 +55,7 @@
     pkgs.sshfs # mount.fuse.sshfs sshfs mount.sshfs
     pkgs.swayimg # swayimg
     pkgs.protonup-ng # protonup
-		pkgs.linuxHeaders
+    pkgs.linuxHeaders
+    pkgs.pinentry-curses # pinentry pinentry-curses pinentry-tty
   ];
 }

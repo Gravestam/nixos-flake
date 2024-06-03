@@ -15,18 +15,6 @@
   skull_teethColor ? scheme.palette.base06,
   skull_hat_liningColor ? scheme.palette.base0D,
 
-	# Toned down keyboard
-	# corne_c_key_face ? scheme.palette.base03,
-	# corne_c_key_back ? scheme.palette.base01,
-	# corne_c_key_left ? scheme.palette.base02,
-	# corne_c_key_right ? scheme.palette.base02,
-	# corne_c_key_front ? scheme.palette.base02,
-	# corne_c_pcb ? scheme.palette.base00,
-	# corne_c_case ? scheme.palette.base02,
-	# corne_c_led_cover ? scheme.palette.base04,
-	# corne_t_led_cover ? "0.4",
-
-	# Colored keyboard
 	corne_c_key_face ? scheme.palette.base0D,
 	corne_c_key_back ? scheme.palette.base02,
 	corne_c_key_left ? scheme.palette.base03,
@@ -42,7 +30,11 @@
 	cornne_text_right ? "You",
 
   text_quoteColor ? scheme.palette.base0C,
-	quoteText ? ''"If at first you don't succeed, destroy all evidence that you tried."'',
+	# quoteText ? ''"If at first you don't succeed, destroy all evidence that you tried."'',
+	# quoteText ? ''"In the realm of code, ingenuity reigns supreme."'',
+	# quoteText ? ''"There is no security on this earth; only opportunity."'',
+	quoteText ? ''"Where others see security, the curious see opportunity."'',
+	# quoteText ? ''"To err is human, to root is divine."''
 
   text_nameColor ? scheme.palette.base0B,
   nameText ? "master@battlestation",
