@@ -3,7 +3,6 @@
 {
   home.packages = [
     pkgs.haskellPackages.SVGFonts
-    # pkgs.nodejs_18 # npx corepack node npm
     pkgs.nodejs_20 # npx corepack node npm
     pkgs.pm2 # pm2-dev pm2-runtime pm2 pm2-docker
     pkgs.corepack # yarn yarnpkg pnpx pnpm
@@ -19,6 +18,5 @@
     pkgs.mpv # mpv_identify.sh mpv umpv
     pkgs.ffmpeg # ffprobe ffplay ffmpeg
     pkgs.wf-recorder # wf-recorder
-		pkgs.vscode
   ];
 }
