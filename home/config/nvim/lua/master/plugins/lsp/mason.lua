@@ -21,27 +21,30 @@ return {
 
 		mason_lspconfig.setup({
 			ensure_installed = {
-				"tsserver",
-				"html",
-				"cssls",
-				"tailwindcss",
-				"svelte",
-				"lua_ls",
-				"emmet_ls",
-				"pyright",
+				-- LSP
+				"tsserver", -- JavaScript, TypeScript
+				"html", -- HTML
+				"cssls", -- CSS, SCSS, LESS
+				"svelte", -- Sveltekit, Svelte
+				"lua_ls", -- Lua
+				"nil_ls", -- Nix
+				"emmet_ls", -- Emmet
+				"pyright", -- Python
 			},
 		})
 
 		mason_tool_installer.setup({
 			ensure_installed = {
-				"pylint",
-				"eslint_d",
-				"prettier",
-				"stylua",
-				"black",
-				"flake8",
-				"shfmt",
-				"beautysh",
+				-- Linters
+				"eslint_d", -- JavaScript, TypeScript
+				"flake8", -- Python
+
+				-- Formatters
+				"prettier", -- Angular, CSS, Flow, GraphQL, HTML, JSON, JSX, JavaScript, LESS, Markdown, SCSS, TypeScript, Vue, YAML
+				"stylua", -- Lua, Luau
+				"black", -- Python
+				"beautysh", -- Bash, Csh, Ksh, Sh, Zsh
+				"nixpkgs-fmt", -- Nix
 			},
 		})
 	end,

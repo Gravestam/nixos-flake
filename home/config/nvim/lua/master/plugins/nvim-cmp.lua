@@ -4,7 +4,7 @@ return {
 	dependencies = {
 		"hrsh7th/cmp-buffer", -- text in buffers
 		"hrsh7th/cmp-path", -- file system paths
-		{ "L3MON4D3/LuaSnip", version = "v2.*", build = "make install_jsregexp" },
+		{ "L3MON4D3/LuaSnip", build = "make install_jsregexp" },
 		"saadparwaiz1/cmp_luasnip", -- autocompletion
 		"rafamadriz/friendly-snippets", -- snippets
 		"onsails/lspkind.nvim", -- pictorgrams
