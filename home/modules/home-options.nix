@@ -3,4 +3,5 @@
 {
 	fonts.fontconfig.enable = true;
 	nixpkgs.config.allowUnfree = true;
+	nixpkgs.config.allowBroken = true;
 }
