@@ -218,6 +218,7 @@ in
       };
 
       cursor = {
+        # inactive_timeout = 1;
         # hide_on_key_press = true;
       };
 
@@ -230,7 +231,7 @@ in
           size = 5;
           passes = 4;
           new_optimizations = true;
-					xray = true;
+          xray = true;
         };
 
         drop_shadow = "yes";
