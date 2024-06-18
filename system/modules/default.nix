@@ -19,6 +19,7 @@
     ./time.nix
     ./theme.nix
     ./users.nix
+		./printer.nix
     # ./virtualisation.nix
   ];
 }
