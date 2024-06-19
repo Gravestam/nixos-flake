@@ -19,7 +19,7 @@ return {
 		cmp.setup({
 			completion = { 
 				completeopt = "menu,menuone,preview,noselect",
-				autocomplete = false
+				autocomplete = false -- When set to false, it will only show if toggled and will be hidden by default (less noisy while getting shit done...)
 			},
 			snippet = {
 				expand = function(args)
@@ -53,6 +53,21 @@ return {
 					maxwidth = 50,
 					ellipsis_char = "...",
 					symbol_map = { Copilot = "" },
+				}),
+			},
+			window = {
+				completion = cmp.config.window.bordered({
+					border = "rounded", -- single, double, rounded, solid, shadow
+					col_offset = -3,
+					side_padding = 1,
+					scrolloff = 1,
+				}),
+				documentation = cmp.config.window.bordered({
+					border = "rounded",
+					col_offset = 1,
+					row_offset = 1,
+					max_width = 80,
+					max_height = 20,
 				}),
 			},
 		})
