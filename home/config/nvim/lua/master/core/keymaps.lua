@@ -8,6 +8,7 @@ keymap.set("n", "<leader>nh", "<cmd>nohl<CR>", { desc = "Clear [H]ighlights" })
 
 -- navigation
 keymap.set("n", "<C-e>", "<C-d>", { desc = "Move half page down" })
+keymap.set("v", "<C-e>", "<C-d>", { desc = "Select half page down" })
 
 -- windows
 keymap.set("n", "<leader>wv", "<C-w>v", { desc = "Split [W]indow [V]ertically" })
