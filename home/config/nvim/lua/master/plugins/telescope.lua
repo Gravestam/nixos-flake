@@ -30,7 +30,9 @@ return {
 					"--column",
 					"--smart-case",
 					"--hidden",
-					"--glob", "!.git/"
+					"--glob", "!.git/",
+					"--glob", "!node_modules/**",
+					"--no-ignore",
 				},
 				layout_config = {
 					width = 0.9,
@@ -43,7 +45,7 @@ return {
 			pickers = {
 				find_files = {
 					previewer = true,
-					find_command = { 'fd', '--type', 'f', '--hidden', '--exclude', '.git' },
+					find_command = { "fd", "--type", "f", "--hidden", "--no-ignore", "--exclude", ".git", "--exclude", "node_modules" },
 				},
 				oldfiles = {
 					previewer = true,
