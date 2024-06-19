@@ -21,6 +21,48 @@ return {
 						["<C-down>"] = actions.move_selection_next,
 					},
 				},
+				vimgrep_arguments = {
+					"rg",
+					"--color=never",
+					"--no-heading",
+					"--with-filename",
+					"--line-number",
+					"--column",
+					"--smart-case",
+					"--hidden",
+					"--glob", "!.git/"
+				},
+				layout_config = {
+					width = 0.9,
+					height = 0.9,
+					prompt_position = "top",
+					preview_cutoff = 0,
+					preview_width = 0.5,
+				},
+			},
+			pickers = {
+				find_files = {
+					previewer = true,
+					find_command = { 'fd', '--type', 'f', '--hidden', '--exclude', '.git' },
+				},
+				oldfiles = {
+					previewer = true,
+				},
+				live_grep = {
+					previewer = true,
+				},
+				grep_string = {
+					previewer = true,
+				},
+				buffers = {
+					previewer = true,
+				},
+				keymaps = {
+					previewer = true,
+				},
+				filetypes = {
+					previewer = true,
+				},
 			},
 			extensions = {
 				["ui_select"] = {
@@ -49,14 +91,14 @@ return {
 				previewer = false,
 				layout_config = { width = 0.65, height = 0.5 },
 			}))
-		end, { desc = "[/] Fuzzily search in current buffer" })
+			end, { desc = "[/] Fuzzily search in current buffer" })
 
 		keymap.set("n", "<leader>fn", function()
 			tsb.find_files({ cwd = vim.fn.stdpath("config") })
-		end, { desc = "[F]ind [N]eovim files" })
+			end, { desc = "[F]ind [N]eovim files" })
 
 		keymap.set("n", "<leader>f.", function()
 			tsb.find_files({ cwd = "~/.system-dotfiles/" })
-		end, { desc = "[F]ind [.]System files" })
+			end, { desc = "[F]ind [.]System files" })
 	end,
 }
