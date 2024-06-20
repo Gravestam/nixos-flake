@@ -33,11 +33,6 @@
         grep = "rg";
         cat = "bat";
         bt = "bluetoothctl";
-        tm = "tmux";
-        tml = "tmux ls";
-        tma = "tmux attach -t";
-        tmk = "tmux kill-session -t";
-        tmka = "tmux kill-server";
         startHyprland = "dbus-run-session Hyprland";
         ai = "~/projects/node-ai/main.js shell";
         yarn_force_dir = "~/projects/glimworks/retailer_config/yarn_force";

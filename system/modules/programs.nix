@@ -25,11 +25,6 @@
       enableSSHSupport = true;
     };
 
-    tmux = {
-      enable = true;
-      escapeTime = 0;
-    };
-
     neovim = {
       enable = true;
       defaultEditor = true;
