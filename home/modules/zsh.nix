@@ -37,6 +37,8 @@
         ai = "~/projects/node-ai/main.js shell";
         yarn_force_dir = "~/projects/glimworks/retailer_config/yarn_force";
 				shithost = "TERM=xterm-256color";
+				ze = "zellij";
+				tm = "zellij";
       };
 
     initExtra = "[ -f ~/.fzf_colors ] && source ~/.fzf_colors\n[ -f ~/private_aliases/one ] && source ~/private_aliases/one";
