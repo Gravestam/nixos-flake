@@ -23,6 +23,22 @@ in
 				white = "#${colors.base06}";
 				orange = "#${colors.base09}";
 			};
+
+			simplified_ui = true; # If true, disable the ui blocks (arrows)
+			pane_frames = true; # Toggle between having pane frames around the panes
+			on_force_close = "detach"; # quit, detach
+			default_mode = "locked"; # Startup mode: locked, normal
+			mouse_mode = true;
+			scroll_buffer_size = 10000;
+			copy_on_select = true;
+			styled_underlines = true;
+
+			ui = {
+				pane_frames = {
+					rounded_corners = true;
+					hide_session_name = true;
+				};
+			};
 		};
 	};
 }
