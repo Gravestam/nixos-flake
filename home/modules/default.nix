@@ -11,7 +11,7 @@
     ./git.nix
     ./fastfetch.nix
     ./wezterm.nix
-    ./firefox.nix
+    # ./firefox.nix
     ./waybar.nix
     ./hyprland.nix
     ./rofi-wayland.nix

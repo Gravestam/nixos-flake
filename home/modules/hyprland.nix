@@ -10,7 +10,8 @@ let
 
   # terminal = "wezterm start --always-new-process";
   terminal = "footclient --window-size-chars=110x30";
-  browser = "firefox";
+  # browser = "firefox";
+  browser = "brave";
   menu = "rofi -show drun";
   webapps = "~/.config/hypr/scripts/rofi-webapps";
   websearch = "~/.config/hypr/scripts/rofi-websearch";
