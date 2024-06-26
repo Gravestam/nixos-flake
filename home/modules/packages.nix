@@ -20,5 +20,6 @@
     pkgs.wf-recorder # wf-recorder
     pkgs.robo3t
 		pkgs.lyrebird
+		pkgs.bitwarden-desktop
   ];
 }
