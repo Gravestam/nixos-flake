@@ -52,9 +52,11 @@ return {
 				},
 				live_grep = {
 					previewer = true,
+					find_command = { "fd", "--type", "f", "--hidden", "--no-ignore", "--exclude", ".git", "--exclude", "node_modules" },
 				},
 				grep_string = {
 					previewer = true,
+					find_command = { "fd", "--type", "f", "--hidden", "--no-ignore", "--exclude", ".git", "--exclude", "node_modules" },
 				},
 				buffers = {
 					previewer = true,
@@ -86,14 +88,7 @@ return {
 		keymap.set("n", "<leader>fb", tsb.buffers, { desc = "Telescope [F]ind [B]uffers" })
 		keymap.set("n", "<leader>fk", tsb.keymaps, { desc = "Telescope [F]ind [K]eymaps" })
 		keymap.set("n", "<leader>ft", tsb.filetypes, { desc = "Telescope [F]ind [K]filetypes" })
-
-		keymap.set("n", "<leader>/", function()
-			tsb.current_buffer_fuzzy_find(require("telescope.themes").get_dropdown({
-				winblend = 10,
-				previewer = false,
-				layout_config = { width = 0.65, height = 0.5 },
-			}))
-			end, { desc = "[/] Fuzzily search in current buffer" })
+		keymap.set("n", "<leader>/", tsb.current_buffer_fuzzy_find, { desc = "[/] Fuzzily search in current buffer" })
 
 		keymap.set("n", "<leader>fn", function()
 			tsb.find_files({ cwd = vim.fn.stdpath("config") })
