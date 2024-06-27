@@ -31,7 +31,7 @@ return {
 					"--smart-case",
 					"--hidden",
 					"--glob", "!.git/",
-					"--glob", "!node_modules/**",
+					"--glob", "!**node_modules/**",
 					"--no-ignore",
 				},
 				layout_config = {
@@ -45,18 +45,18 @@ return {
 			pickers = {
 				find_files = {
 					previewer = true,
-					find_command = { "fd", "--type", "f", "--hidden", "--no-ignore", "--exclude", ".git", "--exclude", "node_modules" },
+					find_command = { "fd", "--type", "f", "--hidden", "--no-ignore", "--exclude", ".git", "--exclude", "node_modules", "--exclude", "**/node_modules/**" },
 				},
 				oldfiles = {
 					previewer = true,
 				},
 				live_grep = {
 					previewer = true,
-					find_command = { "fd", "--type", "f", "--hidden", "--no-ignore", "--exclude", ".git", "--exclude", "node_modules" },
+					find_command = { "fd", "--type", "f", "--hidden", "--no-ignore", "--exclude", ".git", "--exclude", "node_modules", "--exclude", "**/node_modules/**" },
 				},
 				grep_string = {
 					previewer = true,
-					find_command = { "fd", "--type", "f", "--hidden", "--no-ignore", "--exclude", ".git", "--exclude", "node_modules" },
+					find_command = { "fd", "--type", "f", "--hidden", "--no-ignore", "--exclude", ".git", "--exclude", "node_modules", "--exclude", "**/node_modules/**" },
 				},
 				buffers = {
 					previewer = true,
