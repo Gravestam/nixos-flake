@@ -24,5 +24,7 @@
 		pkgs.hashcat # hashcat
 		pkgs.john # john the ripper
 		pkgs.wifite2 # wifite
+		pkgs.p7zip # 7za 7zr 7z
+		pkgs.outils # md5
   ];
 }
