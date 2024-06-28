@@ -21,5 +21,8 @@
     pkgs.robo3t
 		pkgs.lyrebird
 		pkgs.bitwarden-desktop
+		pkgs.hashcat # hashcat
+		pkgs.john # john the ripper
+		pkgs.wifite2 # wifite
   ];
 }
