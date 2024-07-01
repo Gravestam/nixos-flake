@@ -26,5 +26,10 @@
 		pkgs.wifite2 # wifite
 		pkgs.p7zip # 7za 7zr 7z
 		pkgs.outils # md5
+		pkgs.hcxtools # hcxpsktool hcxwltool whoismac wlancap2wpasec hcxpmktool hcxpcapngtool hcxhash2cap hcxhashtool hcxeiutool
+		pkgs.aircrack-ng
+		pkgs.reaverwps-t6x
+		pkgs.bully
+		pkgs.qFlipper
   ];
 }
