@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ config, pkgs, ... }:
 
 {
   boot = {
@@ -35,6 +35,6 @@
 
     kernelPackages = pkgs.linuxPackages_latest;
 
-    extraModulePackages = [ ];
+    extraModulePackages = [ config.boot.kernelPackages.rtl88xxau-aircrack ];
   };
 }

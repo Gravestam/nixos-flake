@@ -3,7 +3,7 @@
 {
   services = {
     dbus.enable = true;
-    picom.enable = true;
+    picom.enable = false;
     openssh.enable = true;
     gvfs.enable = true;
     udisks2.enable = true;

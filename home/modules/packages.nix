@@ -19,17 +19,23 @@
     pkgs.ffmpeg # ffprobe ffplay ffmpeg
     pkgs.wf-recorder # wf-recorder
     pkgs.robo3t
-		pkgs.lyrebird
-		pkgs.bitwarden-desktop
-		pkgs.hashcat # hashcat
-		pkgs.john # john the ripper
-		pkgs.wifite2 # wifite
-		pkgs.p7zip # 7za 7zr 7z
-		pkgs.outils # md5
-		pkgs.hcxtools # hcxpsktool hcxwltool whoismac wlancap2wpasec hcxpmktool hcxpcapngtool hcxhash2cap hcxhashtool hcxeiutool
-		pkgs.aircrack-ng
-		pkgs.reaverwps-t6x
-		pkgs.bully
-		pkgs.qFlipper
+    pkgs.lyrebird
+    pkgs.bitwarden-desktop
+    pkgs.hashcat # hashcat
+    pkgs.john # john the ripper
+    pkgs.wifite2 # wifite
+    pkgs.p7zip # 7za 7zr 7z
+    pkgs.outils # md5
+    pkgs.hcxtools # hcxpsktool hcxwltool whoismac wlancap2wpasec hcxpmktool hcxpcapngtool hcxhash2cap hcxhashtool hcxeiutool
+    pkgs.aircrack-ng
+    pkgs.reaverwps-t6x
+    pkgs.bully
+    pkgs.qFlipper
+    pkgs.google-chrome
+		pkgs.esptool-ck
+		pkgs.minicom
+		pkgs.rpi-imager
+		pkgs.crunch
+		pkgs.wireshark-qt
   ];
 }

@@ -19,7 +19,8 @@
     ./time.nix
     ./theme.nix
     ./users.nix
-		./printer.nix
+    ./printer.nix
     # ./virtualisation.nix
+    ./flipperzero.nix
   ];
 }
