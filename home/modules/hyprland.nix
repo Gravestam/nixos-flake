@@ -13,6 +13,7 @@ let
   # browser = "firefox";
   browser = "brave";
   menu = "rofi -show drun";
+	pwmanager = "rofi-rbw";
   webapps = "~/.config/hypr/scripts/rofi-webapps";
   websearch = "~/.config/hypr/scripts/rofi-websearch";
   lock = "~/.config/hypr/scripts/swaylock_lock";
@@ -108,6 +109,7 @@ in
         # Application bindings
         "$mainMod, Return, exec, ${terminal}"
         "$mainMod, B, exec, ${browser}"
+        "$mainMod, Y, exec, ${pwmanager}"
         # "$mainMod $mod1, Return, exec, ${terminal} --class=Terminal-Float"
         "$mainMod $mod1, Return, exec, ${terminal} --app-id=Terminal-Float"
         "$mainMod, Space, exec, ${menu}"

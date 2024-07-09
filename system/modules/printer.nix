@@ -12,7 +12,7 @@
     system-config-printer.enable = true;
   };
   environment.systemPackages = [
-    pkgs.hplipWithPlugin
+    # pkgs.hplipWithPlugin
     pkgs.gutenprint
   ];
 }

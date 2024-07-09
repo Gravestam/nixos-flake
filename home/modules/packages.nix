@@ -20,7 +20,7 @@
     pkgs.wf-recorder # wf-recorder
     pkgs.robo3t
     pkgs.lyrebird
-    pkgs.bitwarden-desktop
+    # pkgs.bitwarden-desktop
     pkgs.hashcat # hashcat
     pkgs.john # john the ripper
     pkgs.wifite2 # wifite
@@ -37,5 +37,7 @@
 		pkgs.rpi-imager
 		pkgs.crunch
 		pkgs.wireshark-qt
+		pkgs.rofi-rbw-wayland
+		pkgs.wtype # wtype
   ];
 }
