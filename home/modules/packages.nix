@@ -39,5 +39,6 @@
 		pkgs.wireshark-qt
 		pkgs.rofi-rbw-wayland
 		pkgs.wtype # wtype
+		pkgs.obsidian
   ];
 }
