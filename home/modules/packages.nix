@@ -32,13 +32,13 @@
     pkgs.bully
     pkgs.qFlipper
     pkgs.google-chrome
-		pkgs.esptool-ck
-		pkgs.minicom
-		pkgs.rpi-imager
-		pkgs.crunch
-		pkgs.wireshark-qt
-		pkgs.rofi-rbw-wayland
-		pkgs.wtype # wtype
-		pkgs.obsidian
+    pkgs.esptool-ck
+    pkgs.minicom
+    pkgs.rpi-imager
+    pkgs.crunch
+    pkgs.wireshark-qt
+    pkgs.rofi-rbw-wayland
+    pkgs.wtype # wtype
+    pkgs.obsidian
   ];
 }
