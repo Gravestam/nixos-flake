@@ -40,5 +40,6 @@
     pkgs.rofi-rbw-wayland
     pkgs.wtype # wtype
     pkgs.obsidian
+		pkgs.prismlauncher
   ];
 }
