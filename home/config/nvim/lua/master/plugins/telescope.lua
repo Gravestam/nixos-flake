@@ -31,7 +31,7 @@ return {
 					"--smart-case",
 					"--hidden",
 					"--glob", "!.git/",
-					"--glob", "!**node_modules/**",
+					"--glob", "!**/node_modules/**",
 					"--no-ignore",
 				},
 				layout_config = {
@@ -52,11 +52,15 @@ return {
 				},
 				live_grep = {
 					previewer = true,
-					find_command = { "fd", "--type", "f", "--hidden", "--no-ignore", "--exclude", ".git", "--exclude", "node_modules", "--exclude", "**/node_modules/**" },
+					additional_args = function(opts)
+                        return {"--glob", "!.git/", "--glob", "!**/node_modules/**"}
+                    end,
 				},
 				grep_string = {
 					previewer = true,
-					find_command = { "fd", "--type", "f", "--hidden", "--no-ignore", "--exclude", ".git", "--exclude", "node_modules", "--exclude", "**/node_modules/**" },
+					additional_args = function(opts)
+                        return {"--glob", "!.git/", "--glob", "!**/node_modules/**"}
+                    end,
 				},
 				buffers = {
 					previewer = true,
