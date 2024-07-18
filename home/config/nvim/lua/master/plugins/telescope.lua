@@ -53,14 +53,14 @@ return {
 				live_grep = {
 					previewer = true,
 					additional_args = function(opts)
-                        return {"--glob", "!.git/", "--glob", "!**/node_modules/**"}
-                    end,
+						return {"--glob", "!.git/", "--glob", "!**/node_modules/**"}
+					end,
 				},
 				grep_string = {
 					previewer = true,
 					additional_args = function(opts)
-                        return {"--glob", "!.git/", "--glob", "!**/node_modules/**"}
-                    end,
+						return {"--glob", "!.git/", "--glob", "!**/node_modules/**"}
+					end,
 				},
 				buffers = {
 					previewer = true,
@@ -96,10 +96,18 @@ return {
 
 		keymap.set("n", "<leader>fn", function()
 			tsb.find_files({ cwd = vim.fn.stdpath("config") })
-			end, { desc = "[F]ind [N]eovim files" })
+		end, { desc = "[F]ind [N]eovim files" })
 
 		keymap.set("n", "<leader>f.", function()
 			tsb.find_files({ cwd = "~/.system-dotfiles/" })
-			end, { desc = "[F]ind [.]System files" })
+		end, { desc = "[F]ind [.]System files" })
+
+		keymap.set("n", "<leader>fg", function()
+			tsb.live_grep({
+				additional_args = function(opts)
+					return { "--max-count=1", "--glob", "!.git/", "--glob", "!**/node_modules/**" }
+				end
+			})
+		end, { desc = "Telescope [F]ind unique [G]rep" })
 	end,
 }
