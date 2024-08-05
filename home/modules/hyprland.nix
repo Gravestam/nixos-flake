@@ -6,7 +6,7 @@
 }:
 
 let
-  colors = config.colorScheme.colors;
+  colors = config.colorScheme.palette;
 
   # terminal = "wezterm start --always-new-process";
   terminal = "footclient --window-size-chars=110x30";

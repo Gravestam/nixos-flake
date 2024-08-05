@@ -1,7 +1,7 @@
 { config, ... }:
 
 let
-  c = config.colorScheme.colors;
+  c = config.colorScheme.palette;
   themeContent = ''
     let g:colors_name="nix-colors"
 
