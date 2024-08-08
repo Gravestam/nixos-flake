@@ -20,7 +20,6 @@
     pkgs.wf-recorder # wf-recorder
     pkgs.robo3t
     pkgs.lyrebird
-    # pkgs.bitwarden-desktop
     pkgs.hashcat # hashcat
     pkgs.john # john the ripper
     pkgs.wifite2 # wifite
@@ -42,5 +41,11 @@
     pkgs.obsidian
     pkgs.prismlauncher
     pkgs.bitwarden
+    pkgs.protonup-ng # protonup
+    pkgs.rofi-wayland # rofi-sensible-terminal rofi rofi-theme-selector
+    pkgs.rofi-power-menu # dmenu-power-menu rofi-power-menu
+    pkgs.mongodb-compass
+    pkgs.brave # brave
+    pkgs.burpsuite
   ];
 }

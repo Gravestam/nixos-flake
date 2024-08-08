@@ -6,6 +6,7 @@
       enable = true;
       cups-pdf.enable = true;
     };
+		colord.enable = true;
     system-config-printer.enable = true;
   };
   programs = {
@@ -14,5 +15,6 @@
   environment.systemPackages = [
     pkgs.hplipWithPlugin
     pkgs.gutenprint
+		pkgs.colord
   ];
 }

@@ -9,7 +9,7 @@
       efi.canTouchEfiVariables = true;
 
       # Prevents the boot partition from running out of disk space...
-      systemd-boot.configurationLimit = 5;
+      systemd-boot.configurationLimit = 3;
     };
 
     initrd = {
@@ -26,9 +26,20 @@
       kernelModules = [ "nvidia" ];
     };
 
+    extraModprobeConfig = ''
+      options nvidia NVreg_UsePageAttributeTable=1
+      options nvme_core default_ps_max_latency_us=5500
+    '';
+
     kernelModules = [
       "kvm-amd"
       "nvidia"
+    ];
+
+    kernelParams = [
+      "tsc=unstable"
+      "acpi_enforce_resources=lax"
+      "trace_clock=global"
     ];
 
     blacklistedKernelModules = [ "nouveau" ];
