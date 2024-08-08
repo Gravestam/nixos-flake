@@ -2,7 +2,7 @@
 
 {
   environment.systemPackages = with pkgs; [
-    gnome3.adwaita-icon-theme # default gnome cursors
+    adwaita-icon-theme
     libsForQt5.breeze-qt5
     libsForQt5.breeze-gtk
     libsForQt5.qtstyleplugins

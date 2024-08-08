@@ -7,9 +7,9 @@
       powerOnBoot = true;
     };
 
-    opengl = {
+    graphics = {
       enable = true;
-      driSupport32Bit = true;
+      enable32Bit = true;
       extraPackages = [
         pkgs.mesa.drivers
         pkgs.nvidia-vaapi-driver
