@@ -47,5 +47,6 @@
     pkgs.mongodb-compass
     pkgs.brave # brave
     pkgs.burpsuite
+		pkgs.speedtest-cli # speedtest
   ];
 }
