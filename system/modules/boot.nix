@@ -39,7 +39,7 @@
     kernelParams = [
       "tsc=unstable"
       "acpi_enforce_resources=lax"
-      "trace_clock=global"
+			"spec_store_bypass_disable=on"
     ];
 
     blacklistedKernelModules = [ "nouveau" ];
