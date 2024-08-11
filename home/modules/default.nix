@@ -27,5 +27,6 @@
 		./foot.nix
 		./bitwarden.nix
 		./zellij.nix
+		./gaming.nix
   ];
 }
