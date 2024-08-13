@@ -49,5 +49,6 @@
     pkgs.burpsuite
 		pkgs.speedtest-cli # speedtest
 		pkgs.wowup-cf # world of warcraft addons
+		pkgs.xclip
   ];
 }
