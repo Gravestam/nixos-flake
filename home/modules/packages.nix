@@ -41,7 +41,7 @@
     pkgs.obsidian
     pkgs.prismlauncher
     pkgs.bitwarden
-    pkgs.protonup-ng # protonup
+    pkgs.protonup-qt # protonup
     pkgs.rofi-wayland # rofi-sensible-terminal rofi rofi-theme-selector
     pkgs.rofi-power-menu # dmenu-power-menu rofi-power-menu
     pkgs.mongodb-compass
