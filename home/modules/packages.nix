@@ -50,5 +50,6 @@
 		pkgs.speedtest-cli # speedtest
 		pkgs.wowup-cf # world of warcraft addons
 		pkgs.xclip
+		pkgs.nodePackages_latest.eslint
   ];
 }
