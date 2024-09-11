@@ -31,10 +31,10 @@
 
   text_quoteColor ? scheme.palette.base0C,
 	# quoteText ? ''"If at first you don't succeed, destroy all evidence that you tried."'',
-	# quoteText ? ''"In the realm of code, ingenuity reigns supreme."'',
+	quoteText ? ''"In the realm of code, ingenuity reigns supreme."'',
 	# quoteText ? ''"There is no security on this earth; only opportunity."'',
-	quoteText ? ''"Where others see security, the curious see opportunity."'',
-	# quoteText ? ''"To err is human, to root is divine."''
+	# quoteText ? ''"Where others see security, the curious see opportunity."'',
+	# quoteText ? ''"To err is human, to root is divine."'',
 
   text_nameColor ? scheme.palette.base0B,
   nameText ? "master@battlestation",
