@@ -15,6 +15,13 @@ return {
 		-- - saiw) - [S]urround [A]dd [I]nner [W]ord [)]Paren
 		-- - sd'   - [S]urround [D]elete [']quotes
 		-- - sr)'  - [S]urround [R]eplace [)] [']
-		require("mini.surround").setup()
+		require("mini.surround").setup({
+			custom_surroundings = {
+				["("] = {
+					output = { left = "(", right = ")" }, -- No spaces around
+					input = { left = "%(", right = "%)" }, -- Handles recognition without spaces
+				},
+			}
+		})
 	end,
 }
