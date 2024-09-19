@@ -7,13 +7,13 @@
     portalPackage = pkgs.xdg-desktop-portal-hyprland;
   };
 
-  environment.systemPackages = [
-    pkgs.qt5.qtwayland
-    pkgs.libsForQt5.qt5.qtwayland
-    pkgs.qt6.qtwayland
-    pkgs.wlogout
-    pkgs.wl-clipboard
-    pkgs.swaylock-effects
+  environment.systemPackages = with pkgs; [
+    qt5.qtwayland
+    libsForQt5.qt5.qtwayland
+    qt6.qtwayland
+    wlogout
+    wl-clipboard
+    swaylock-effects
   ];
 
   environment.sessionVariables = {

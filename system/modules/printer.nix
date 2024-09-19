@@ -12,9 +12,9 @@
   programs = {
     system-config-printer.enable = true;
   };
-  environment.systemPackages = [
-    pkgs.hplipWithPlugin
-    pkgs.gutenprint
-		pkgs.colord
+  environment.systemPackages = with pkgs; [
+    hplipWithPlugin
+    gutenprint
+		colord
   ];
 }

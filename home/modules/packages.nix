@@ -1,55 +1,60 @@
 { pkgs, ... }:
 
 {
-  home.packages = [
-    pkgs.haskellPackages.SVGFonts
-    pkgs.nodejs_20 # npx corepack node npm
-    pkgs.pm2 # pm2-dev pm2-runtime pm2 pm2-docker
-    pkgs.corepack # yarn yarnpkg pnpx pnpm
-    pkgs.nodePackages_latest.node-gyp # node-gyp
-    pkgs.signal-desktop # signal-desktop
-    pkgs.spotify
-    pkgs.slack # slack
-    pkgs.gimp
-    pkgs.qalculate-gtk
-    pkgs.inkscape-with-extensions
-    pkgs.obs-studio # obs-ffmpeg-mux obs
-    pkgs.imagemagick # stream magick-script mogrify magick compare conjure MagickWand-config display identify MagickCore-config Magick++-config animate import montage convert composite
-    pkgs.mpv # mpv_identify.sh mpv umpv
-    pkgs.ffmpeg # ffprobe ffplay ffmpeg
-    pkgs.wf-recorder # wf-recorder
-    pkgs.robo3t
-    pkgs.lyrebird
-    pkgs.hashcat # hashcat
-    pkgs.john # john the ripper
-    pkgs.wifite2 # wifite
-    pkgs.p7zip # 7za 7zr 7z
-    pkgs.outils # md5
-    pkgs.hcxtools # hcxpsktool hcxwltool whoismac wlancap2wpasec hcxpmktool hcxpcapngtool hcxhash2cap hcxhashtool hcxeiutool
-    pkgs.aircrack-ng
-    pkgs.reaverwps-t6x
-    pkgs.bully
-    pkgs.qFlipper
-    pkgs.google-chrome
-    pkgs.esptool-ck
-    pkgs.minicom
-    pkgs.rpi-imager
-    pkgs.crunch
-    pkgs.wireshark-qt
-    pkgs.rofi-rbw-wayland
-    pkgs.wtype # wtype
-    pkgs.obsidian
-    pkgs.prismlauncher
-    pkgs.bitwarden
-    pkgs.protonup-qt # protonup
-    pkgs.rofi-wayland # rofi-sensible-terminal rofi rofi-theme-selector
-    pkgs.rofi-power-menu # dmenu-power-menu rofi-power-menu
-    pkgs.mongodb-compass
-    pkgs.brave # brave
-    pkgs.burpsuite
-		pkgs.speedtest-cli # speedtest
-		pkgs.wowup-cf # world of warcraft addons
-		pkgs.xclip
-		# pkgs.nodePackages_latest.eslint
+  home.packages = with pkgs; [
+    haskellPackages.SVGFonts
+    nodejs_20 # npx corepack node npm
+    pm2 # pm2-dev pm2-runtime pm2 pm2-docker
+    corepack # yarn yarnpkg pnpx pnpm
+    nodePackages_latest.node-gyp # node-gyp
+    signal-desktop # signal-desktop
+    spotify
+    slack # slack
+    gimp
+    qalculate-gtk
+    inkscape-with-extensions
+    obs-studio # obs-ffmpeg-mux obs
+    imagemagick # stream magick-script mogrify magick compare conjure MagickWand-config display identify MagickCore-config Magick++-config animate import montage convert composite
+    mpv # mpv_identify.sh mpv umpv
+    ffmpeg # ffprobe ffplay ffmpeg
+    wf-recorder # wf-recorder
+    robo3t
+    lyrebird
+    hashcat # hashcat
+    john # john the ripper
+    wifite2 # wifite
+    p7zip # 7za 7zr 7z
+    outils # md5
+    hcxtools # hcxpsktool hcxwltool whoismac wlancap2wpasec hcxpmktool hcxpcapngtool hcxhash2cap hcxhashtool hcxeiutool
+    aircrack-ng
+    reaverwps-t6x
+    bully
+    qFlipper
+    google-chrome
+    esptool-ck
+    minicom
+    rpi-imager
+    crunch
+    wireshark-qt
+    rofi-rbw-wayland
+    wtype # wtype
+    obsidian
+    prismlauncher
+    bitwarden
+    protonup-qt # protonup
+    rofi-wayland # rofi-sensible-terminal rofi rofi-theme-selector
+    rofi-power-menu # dmenu-power-menu rofi-power-menu
+    mongodb-compass
+    brave # brave
+    burpsuite
+		speedtest-cli # speedtest
+		wowup-cf # world of warcraft addons
+		xclip
+    luajit # luajit-2.1.1693350652 luajit lua
+    go # gmfmt go
+    rustup # rust-gdb rustdoc cargo-miri cargo-clippy rust-lldb rust-gdbgui clippy-driver rustup rust-analyzer rls rustfmt rustc cargo-fmt cargo
+    python3 # idle3.11 python3.11-config python3.11 pydoc3.11 pydoc3 python3 python-config python 2to3-3.11 2to3 python3-config idle pydoc idle3
+    libreoffice-fresh # simpress soffice unopkg smath swriter sbase libreoffice sdraw scalc
+		# nodePackages_latest.eslint
   ];
 }
