@@ -23,6 +23,7 @@
     hashcat # hashcat
     john # john the ripper
     wifite2 # wifite
+		airgeddon
     p7zip # 7za 7zr 7z
     outils # md5
     hcxtools # hcxpsktool hcxwltool whoismac wlancap2wpasec hcxpmktool hcxpcapngtool hcxhash2cap hcxhashtool hcxeiutool
@@ -56,5 +57,10 @@
     python3 # idle3.11 python3.11-config python3.11 pydoc3.11 pydoc3 python3 python-config python 2to3-3.11 2to3 python3-config idle pydoc idle3
     libreoffice-fresh # simpress soffice unopkg smath swriter sbase libreoffice sdraw scalc
 		# nodePackages_latest.eslint
+		wpscan # wordpress pen testing
+		nikto # webserver vuln testing
+		zap # mitm (like burp)
+		nuclei
+		protonvpn-cli_2
   ];
 }
