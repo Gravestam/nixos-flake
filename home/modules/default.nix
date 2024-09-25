@@ -28,5 +28,6 @@
 		./bitwarden.nix
 		./zellij.nix
 		./gaming.nix
+		./ai.nix
   ];
 }
