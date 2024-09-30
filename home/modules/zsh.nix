@@ -36,6 +36,7 @@
         startHyprland = "dbus-run-session Hyprland";
         ai = "~/projects/node-ai/main.js shell";
         yarn_force_dir = "~/projects/glimworks/retailer_config/yarn_force";
+				om = "sh ${nixConfigDir}/home/scripts/ollama-manager.sh";
 				shithost = "TERM=xterm-256color";
 				ze = "zellij";
 				tm = "zellij";
