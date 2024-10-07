@@ -48,5 +48,6 @@
     libreoffice-fresh # simpress soffice unopkg smath swriter sbase libreoffice sdraw scalc
 		# nodePackages_latest.eslint
 		protonvpn-cli_2
+		dig
   ];
 }

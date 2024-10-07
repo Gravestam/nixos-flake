@@ -18,7 +18,7 @@ return {
 				require("none-ls.diagnostics.flake8"), -- Python linter
 
 				require("none-ls.formatting.beautysh"), -- Shell script formatter
-				
+
 				-- nix
 				null_ls.builtins.formatting.nixfmt,
 			},
