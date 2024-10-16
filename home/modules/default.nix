@@ -29,5 +29,6 @@
 		./zellij.nix
 		./gaming.nix
 		./hacking.nix
+		./development.nix
   ];
 }
