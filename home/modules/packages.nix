@@ -32,7 +32,7 @@
     wtype # wtype
     obsidian
     prismlauncher
-    bitwarden
+    # bitwarden
     protonup-qt # protonup
     rofi-wayland # rofi-sensible-terminal rofi rofi-theme-selector
     rofi-power-menu # dmenu-power-menu rofi-power-menu
