@@ -16,7 +16,7 @@
         nixConfigDir = "~/.system-dotfiles";
       in
       {
-        system_update = "sudo nix flake update ${nixConfigDir}";
+        system_update = "sudo nix flake update --flake ${nixConfigDir}";
         system_rebuild = "nh os switch ${nixConfigDir}";
         home_rebuild = "nh home switch ${nixConfigDir}"; # "home-manager switch --flake ${nixConfigDir}";
         conf = "nvim ${nixConfigDir}";
