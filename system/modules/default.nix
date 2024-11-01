@@ -20,7 +20,7 @@
     ./theme.nix
     ./users.nix
     ./printer.nix
-    # ./virtualisation.nix
+    ./virtualisation.nix
     ./flipperzero.nix
 		./ai.nix
   ];
