@@ -10,7 +10,6 @@
     signal-desktop # signal-desktop
     mongodb-tools
     spotify
-    kubectl
     slack # slack
     gimp
     qalculate-gtk
@@ -51,5 +50,6 @@
     # nodePackages_latest.eslint
     protonvpn-cli_2
     dig
+		masterpdfeditor
   ];
 }

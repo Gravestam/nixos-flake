@@ -22,7 +22,7 @@ return {
 		mason_lspconfig.setup({
 			ensure_installed = {
 				-- LSP
-				"tsserver", -- JavaScript, TypeScript
+				"ts_ls", -- JavaScript, TypeScript
 				"html", -- HTML
 				"cssls", -- CSS, SCSS, LESS
 				"svelte", -- Sveltekit, Svelte

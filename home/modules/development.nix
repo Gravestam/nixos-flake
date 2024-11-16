@@ -5,6 +5,5 @@
     mkcert
     skaffold
     kubernetes-helm
-    minikube
   ];
 }

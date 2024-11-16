@@ -95,7 +95,7 @@ return {
 					capabilities = capabilities,
 				})
 			end,
-			["tsserver"] = function(server_name)
+			["ts_ls"] = function(server_name)
 				lspconfig[server_name].setup({
 					capabilities = capabilities,
 					on_attach = function(client)
