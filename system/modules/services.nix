@@ -18,6 +18,7 @@
     udev.extraRules = ''
       # Udev rule for NVIDIA devices
       SUBSYSTEM=="nvidia", MODE="0666"
+			KERNEL=="hidraw*", SUBSYSTEM=="hidraw", ATTRS{serial}=="*vial:f64c2b3c*", MODE="0660", GROUP="users", TAG+="uaccess", TAG+="udev-acl"
     '';
   };
 }
