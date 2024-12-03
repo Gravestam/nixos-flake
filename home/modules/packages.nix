@@ -52,5 +52,6 @@
     dig
 		masterpdfeditor
 		discord
+		vial
   ];
 }
