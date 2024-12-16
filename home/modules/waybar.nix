@@ -283,7 +283,7 @@ in
       external = {
         name = "external";
         layer = "top";
-        position = "right";
+        position = "left";
         height = 0;
         width = 0;
         output = [ "HDMI-A-1" ];
