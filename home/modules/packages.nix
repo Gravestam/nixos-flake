@@ -8,6 +8,7 @@
     corepack # yarn yarnpkg pnpx pnpm
     nodePackages_latest.node-gyp # node-gyp
     signal-desktop # signal-desktop
+		nixd
     mongodb-tools
     spotify
     slack # slack
