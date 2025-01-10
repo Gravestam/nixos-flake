@@ -1710,7 +1710,7 @@ pkgs.stdenv.mkDerivation {
                id="tspan1">${quoteText}</tspan></text><text
              xml:space="preserve"
              style="font-style:normal;font-variant:normal;font-weight:800;font-stretch:normal;font-size:42.6667px;font-family:'JetBrainsMono Nerd Font Mono';-inkscape-font-specification:'JetBrainsMono Nerd Font Mono, Ultra-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;text-anchor:start;opacity:1;fill:#${text_nameColor};stroke:none;stroke-width:18.8976;stroke-linejoin:bevel;paint-order:stroke fill markers"
-             x="43.695431"
+             x="90.695431"
              y="2103.1172"
              id="text372"
              inkscape:label="text_username"><tspan
