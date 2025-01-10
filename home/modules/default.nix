@@ -30,5 +30,6 @@
 		./gaming.nix
 		./hacking.nix
 		./development.nix
+		./vscode.nix
   ];
 }
