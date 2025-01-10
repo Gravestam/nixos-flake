@@ -8,10 +8,8 @@
 let
   colors = config.colorScheme.palette;
 
-  # terminal = "wezterm start --always-new-process";
   terminal = "footclient --window-size-chars=110x30";
-  # browser = "firefox";
-  browser = "brave";
+  browser = "firefox";
   menu = "rofi -show drun";
 	pwmanager = "rofi-rbw";
   webapps = "~/.config/hypr/scripts/rofi-webapps";
