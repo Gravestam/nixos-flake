@@ -46,5 +46,7 @@
           inherit pkgs-stable;
         };
       };
+
+			devShells.${system}.default = (import ./shell.nix { inherit pkgs; });
     };
 }
