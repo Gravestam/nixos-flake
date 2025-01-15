@@ -31,5 +31,6 @@
 		./hacking.nix
 		./development.nix
 		./vscode.nix
+		./kdeconnect.nix
   ];
 }

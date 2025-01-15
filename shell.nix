@@ -7,6 +7,7 @@ pkgs.mkShell {
 		python312Packages.pip
 		python312Packages.pyautogui
 		python312Packages.keyboard
+		python312Packages.opencv4
 	];
 
 	shellHook = ''
