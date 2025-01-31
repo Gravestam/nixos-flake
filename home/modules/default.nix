@@ -27,7 +27,7 @@
 		./foot.nix
 		./bitwarden.nix
 		./zellij.nix
-		./gaming.nix
+		# ./gaming.nix
 		./hacking.nix
 		./development.nix
 		./vscode.nix

@@ -46,6 +46,6 @@
 
     kernelPackages = pkgs.linuxPackages_latest;
 
-    extraModulePackages = [ config.boot.kernelPackages.rtl88xxau-aircrack ];
+    # extraModulePackages = [ config.boot.kernelPackages.rtl88xxau-aircrack ];
   };
 }
