@@ -55,5 +55,6 @@
 		masterpdfeditor
 		discord
 		vial
+		solaar
   ];
 }
