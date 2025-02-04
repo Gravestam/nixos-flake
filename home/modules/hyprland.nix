@@ -19,6 +19,9 @@ let
   screenshot = "grim -g \"\$(slurp)\" - | swappy -f -";
   custom_move = "~/.config/hypr/scripts/moveWindow $resizeStep";
 
+	monitor_main = "HDMI-A-1";
+	monitor_secondary = "eDP-1";
+
   waybar_start = pkgs.writeShellScriptBin "start" ''
     killall waybar
     pkill waybar
@@ -54,23 +57,24 @@ in
       ];
 
       monitor = [
-        "eDP-1, 3840x2160@120, 0x0, 2"
-        "DP-2, 3840x1100@60, 0x1080, 2"
+        "${monitor_main}, 3840x2160@60, 0x0, 1"
+        "${monitor_secondary}, 3840x2160@120, -1920x0, 2"
+        "DP-2, 3840x1100@60, -1920x1080, 2"
         # "HDMI-A-1, 3840x2160@60, 1920x1080, 2"
         # "HDMI-A-1, 3840x2160@60, 1920x0, 1"
-        "HDMI-A-1, 1920x1080@60, -1920x0, 1"
+        # "HDMI-A-1, 1920x1080@60, -1920x0, 1"
       ];
 
       workspace = [
-        "1,monitor:eDP-1"
-        "2,monitor:eDP-1"
-        "3,monitor:eDP-1"
-        "4,monitor:eDP-1"
-        "5,monitor:eDP-1"
-        "6,monitor:eDP-1"
-        "7,monitor:eDP-1"
-        "8,monitor:eDP-1"
-        "9,monitor:eDP-1"
+        "1,monitor:${monitor_main}"
+        "2,monitor:${monitor_main}"
+        "3,monitor:${monitor_main}"
+        "4,monitor:${monitor_main}"
+        "5,monitor:${monitor_main}"
+        "6,monitor:${monitor_main}"
+        "7,monitor:${monitor_main}"
+        "8,monitor:${monitor_main}"
+        "9,monitor:${monitor_main}"
 
         "10,monitor:DP-2"
         "11,monitor:DP-2"
@@ -79,12 +83,12 @@ in
         "14,monitor:DP-2"
         "15,monitor:DP-2"
 
-        "16,monitor:HDMI-A-1"
-        "17,monitor:HDMI-A-1"
-        "18,monitor:HDMI-A-1"
-        "19,monitor:HDMI-A-1"
-        "20,monitor:HDMI-A-1"
-        "21,monitor:HDMI-A-1"
+        "16,monitor:${monitor_secondary}"
+        "17,monitor:${monitor_secondary}"
+        "18,monitor:${monitor_secondary}"
+        "19,monitor:${monitor_secondary}"
+        "20,monitor:${monitor_secondary}"
+        "21,monitor:${monitor_secondary}"
 
         "special:scratch,gapsout:60,on-created-empty:${terminal}"
       ];

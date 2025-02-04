@@ -1,7 +1,13 @@
 { config, ... }:
 
+# HDMI-A-1
+# eDP-1
+# DP-2
+
 let
   colors = config.colorScheme.palette;
+	monitor_mainbar = "HDMI-A-1";
+	monitor_secondary = "eDP-1";
 in
 {
   programs.waybar = {
@@ -12,7 +18,7 @@ in
         layer = "top";
         position = "top";
         height = 0;
-        output = [ "eDP-1" ];
+        output = [ "${monitor_mainbar}" ];
 
         modules-left = [
           "custom/distro"
@@ -45,7 +51,7 @@ in
             urgent = " ";
           };
           persistent-workspaces = {
-            eDP-1 = [
+            "${monitor_mainbar}" = [
               1
               2
               3
@@ -286,7 +292,7 @@ in
         position = "left";
         height = 0;
         width = 0;
-        output = [ "HDMI-A-1" ];
+        output = [ "${monitor_secondary}" ];
 
         modules-left = [ ];
 
@@ -306,7 +312,7 @@ in
             urgent = " ";
           };
           persistent-workspaces = {
-            HDMI-A-1 = [
+            "${monitor_secondary}" = [
               16
               17
               18
