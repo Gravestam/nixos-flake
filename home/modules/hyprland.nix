@@ -19,13 +19,15 @@ let
   screenshot = "grim -g \"\$(slurp)\" - | swappy -f -";
   custom_move = "~/.config/hypr/scripts/moveWindow $resizeStep";
 
-	monitor_main = "HDMI-A-1";
-	monitor_secondary = "eDP-1";
+	# monitor_main = "HDMI-A-1";
+	# monitor_secondary = "eDP-1";
+	monitor_main = "eDP-1";
+	monitor_secondary = "HDMI-A-1";
 
   waybar_start = pkgs.writeShellScriptBin "start" ''
     killall waybar
     pkill waybar
-    sleep 0.2
+    sleep 0.5
     waybar &
   '';
 
@@ -57,9 +59,9 @@ in
       ];
 
       monitor = [
-        "${monitor_main}, 3840x2160@60, 0x0, 1"
-        "${monitor_secondary}, 3840x2160@120, -1920x0, 2"
-        "DP-2, 3840x1100@60, -1920x1080, 2"
+        "${monitor_main}, 3840x2160@120, 0x0, 2"
+        "${monitor_secondary}, 3840x2160@60, 1920x0, 1"
+        "DP-2, 3840x1100@60, 0x1080, 2"
         # "HDMI-A-1, 3840x2160@60, 1920x1080, 2"
         # "HDMI-A-1, 3840x2160@60, 1920x0, 1"
         # "HDMI-A-1, 1920x1080@60, -1920x0, 1"

@@ -6,8 +6,10 @@
 
 let
   colors = config.colorScheme.palette;
-	monitor_mainbar = "HDMI-A-1";
-	monitor_secondary = "eDP-1";
+	# monitor_mainbar = "HDMI-A-1";
+	# monitor_secondary = "eDP-1";
+	monitor_mainbar = "eDP-1";
+	monitor_secondary = "HDMI-A-1";
 in
 {
   programs.waybar = {
@@ -96,7 +98,7 @@ in
 
         # Clock
         "clock" = {
-          format = "󰥔 {:%H:%M}";
+          format = "󰥔 {:%H:%M | %d-%m-%Y}";
           tooltip = true;
           tooltip-format = "{:%A, %d %B %Y }";
         };
@@ -289,7 +291,7 @@ in
       external = {
         name = "external";
         layer = "top";
-        position = "left";
+        position = "right";
         height = 0;
         width = 0;
         output = [ "${monitor_secondary}" ];
