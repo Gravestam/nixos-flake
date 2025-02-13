@@ -11,10 +11,10 @@
     hcxtools # hcxpsktool hcxwltool whoismac wlancap2wpasec hcxpmktool hcxpcapngtool hcxhash2cap hcxhashtool hcxeiutool
     outils # md5
     hashcat # hashcat
-    john # john the ripper
-    wifite2 # wifite
-		airgeddon
-    bully
+    # john # john the ripper
+    # wifite2 # wifite
+		# airgeddon
+    # bully
     qFlipper
 	];
 }
