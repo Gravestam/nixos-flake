@@ -8,7 +8,7 @@
 let
   colors = config.colorScheme.palette;
 
-  terminal = "footclient --window-size-chars=110x30";
+  terminal = "footclient --window-size-chars=210x65";
   browser = "firefox";
   menu = "rofi -show drun";
 	pwmanager = "rofi-rbw";

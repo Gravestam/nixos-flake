@@ -16,5 +16,6 @@
 		airgeddon
     bully
     qFlipper
+		metasploit
 	];
 }
