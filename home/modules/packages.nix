@@ -56,5 +56,6 @@
 		discord
 		vial
 		solaar
+		zathura
   ];
 }
