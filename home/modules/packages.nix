@@ -56,6 +56,6 @@
 		vial
 		solaar
 		zathura
-		(import ../derivations/robo3t.nix { inherit pkgs; })
+		robo3t
 	];
 }
