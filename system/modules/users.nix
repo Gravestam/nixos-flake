@@ -10,7 +10,8 @@
       "wheel"
       "networkmanager"
       "cups"
-			"docker"
+      "docker"
+      "dialout"
     ];
   };
 }

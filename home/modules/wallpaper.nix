@@ -1,4 +1,5 @@
 { pkgs }:
+
 {
   scheme,
   bg1 ? scheme.palette.base01,
