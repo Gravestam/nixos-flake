@@ -12,6 +12,8 @@
     };
 
     nix-colors.url = "github:misterio77/nix-colors";
+
+		nvf.url = "github:notashelf/nvf";
   };
 
   outputs =
@@ -20,6 +22,7 @@
       nixpkgs-stable,
       home-manager,
       nix-colors,
+			nvf,
       ...
     }:
     let
@@ -43,6 +46,7 @@
         extraSpecialArgs = {
           inherit system;
           inherit nix-colors;
+					inherit nvf;
           inherit pkgs-stable;
         };
       };

@@ -29,5 +29,9 @@
       enable = true;
       defaultEditor = true;
     };
+
+		chromium = {
+			enable = true;
+		};
   };
 }

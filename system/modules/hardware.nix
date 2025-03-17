@@ -11,7 +11,7 @@
       enable = true;
       enable32Bit = true;
       extraPackages = [
-        pkgs.mesa.drivers
+        pkgs.mesa
         pkgs.nvidia-vaapi-driver
       ];
     };
