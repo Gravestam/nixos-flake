@@ -9,7 +9,7 @@ let
   colors = config.colorScheme.palette;
 
   terminal = "footclient --window-size-chars=110x30";
-  browser = "firefox";
+  browser = "brave";
   menu = "rofi -show drun";
 	pwmanager = "rofi-rbw";
   webapps = "~/.config/hypr/scripts/rofi-webapps";

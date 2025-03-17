@@ -57,5 +57,7 @@
 		solaar
 		zathura
 		robo3t
+		kdePackages.kdenlive
+		audacity
 	];
 }

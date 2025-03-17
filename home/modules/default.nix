@@ -9,7 +9,7 @@
     ./eza.nix
     ./git.nix
     ./fastfetch.nix
-    ./firefox.nix
+    # ./firefox.nix
     ./waybar.nix
     ./hyprland.nix
     ./rofi-wayland.nix
