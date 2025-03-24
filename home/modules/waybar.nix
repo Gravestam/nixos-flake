@@ -1,15 +1,12 @@
 { config, ... }:
 
-# HDMI-A-1
-# eDP-1
-# DP-2
-
 let
   colors = config.colorScheme.palette;
 	# monitor_mainbar = "HDMI-A-1";
 	# monitor_secondary = "eDP-1";
 	monitor_mainbar = "eDP-1";
 	monitor_secondary = "HDMI-A-1";
+	monitor_bottom = "DP-2";
 in
 {
   programs.waybar = {
@@ -256,7 +253,7 @@ in
         position = "left";
         height = 0;
         width = 0;
-        output = [ "DP-2" ];
+        output = [ "${monitor_bottom}" ];
 
         modules-left = [ ];
 
@@ -276,7 +273,7 @@ in
             urgent = " ";
           };
           persistent-workspaces = {
-            DP-2 = [
+            "${monitor_bottom}" = [
               10
               11
               12

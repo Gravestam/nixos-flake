@@ -23,6 +23,7 @@ let
 	# monitor_secondary = "eDP-1";
 	monitor_main = "eDP-1";
 	monitor_secondary = "HDMI-A-1";
+	monitor_bottom = "DP-2";
 
   waybar_start = pkgs.writeShellScriptBin "start" ''
     killall waybar
@@ -61,7 +62,7 @@ in
       monitor = [
         "${monitor_main}, 3840x2160@120, 0x0, 2"
         "${monitor_secondary}, 3840x2160@60, 1920x0, 1"
-        "DP-2, 3840x1100@60, 0x1080, 2"
+        "${monitor_bottom}, 3840x1100@60, 0x1080, 2"
         # "HDMI-A-1, 3840x2160@60, 1920x1080, 2"
         # "HDMI-A-1, 3840x2160@60, 1920x0, 1"
         # "HDMI-A-1, 1920x1080@60, -1920x0, 1"
@@ -78,12 +79,12 @@ in
         "8,monitor:${monitor_main}"
         "9,monitor:${monitor_main}"
 
-        "10,monitor:DP-2"
-        "11,monitor:DP-2"
-        "12,monitor:DP-2"
-        "13,monitor:DP-2"
-        "14,monitor:DP-2"
-        "15,monitor:DP-2"
+        "10,monitor:${monitor_bottom}"
+        "11,monitor:${monitor_bottom}"
+        "12,monitor:${monitor_bottom}"
+        "13,monitor:${monitor_bottom}"
+        "14,monitor:${monitor_bottom}"
+        "15,monitor:${monitor_bottom}"
 
         "16,monitor:${monitor_secondary}"
         "17,monitor:${monitor_secondary}"
@@ -287,9 +288,9 @@ in
       ];
 
       wallpaper = [
-        "eDP-1,${wallpaperPathTop}"
-        "DP-2,${wallpaperPathBottom}"
-        "HDMI-A-1,${wallpaperPathTop}"
+        "${monitor_main},${wallpaperPathTop}"
+        "${monitor_bottom},${wallpaperPathBottom}"
+        "${monitor_secondary},${wallpaperPathTop}"
       ];
     };
   };

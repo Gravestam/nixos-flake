@@ -13,7 +13,7 @@
     system-config-printer.enable = true;
   };
   environment.systemPackages = with pkgs; [
-    hplipWithPlugin
+    # hplipWithPlugin
     gutenprint
 		colord
   ];

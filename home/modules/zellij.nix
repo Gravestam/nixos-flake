@@ -9,6 +9,7 @@ in
 		enableZshIntegration = true;
 
 		settings = {
+			show_startup_tips = false;
 			theme = "nixcolors";
 			themes.nixcolors = {
 				fg = "#${colors.base05}";
