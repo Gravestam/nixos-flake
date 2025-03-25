@@ -17,7 +17,6 @@
 
 		udev = {
 			extraRules = ''
-				# Udev rule for NVIDIA devices
 				SUBSYSTEM=="nvidia", MODE="0666"
 			'';
 			packages = [

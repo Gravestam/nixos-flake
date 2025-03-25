@@ -46,5 +46,6 @@
     swayimg # swayimg
     linuxHeaders
     pinentry-curses # pinentry pinentry-curses pinentry-tty
+		android-udev-rules
   ];
 }

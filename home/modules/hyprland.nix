@@ -19,11 +19,12 @@ let
   screenshot = "grim -g \"\$(slurp)\" - | swappy -f -";
   custom_move = "~/.config/hypr/scripts/moveWindow $resizeStep";
 
+	monitor_main = "eDP-1";
 	# monitor_main = "HDMI-A-1";
 	# monitor_secondary = "eDP-1";
-	monitor_main = "eDP-1";
-	monitor_secondary = "HDMI-A-1";
-	monitor_bottom = "DP-2";
+	# monitor_secondary = "HDMI-A-1";
+	monitor_bottom = "DP-1";
+	# monitor_bottom = "DP-2";
 
   waybar_start = pkgs.writeShellScriptBin "start" ''
     killall waybar
@@ -61,7 +62,7 @@ in
 
       monitor = [
         "${monitor_main}, 3840x2160@120, 0x0, 2"
-        "${monitor_secondary}, 3840x2160@60, 1920x0, 1"
+        # "${monitor_secondary}, 3840x2160@60, 1920x0, 1"
         "${monitor_bottom}, 3840x1100@60, 0x1080, 2"
         # "HDMI-A-1, 3840x2160@60, 1920x1080, 2"
         # "HDMI-A-1, 3840x2160@60, 1920x0, 1"
@@ -86,12 +87,12 @@ in
         "14,monitor:${monitor_bottom}"
         "15,monitor:${monitor_bottom}"
 
-        "16,monitor:${monitor_secondary}"
-        "17,monitor:${monitor_secondary}"
-        "18,monitor:${monitor_secondary}"
-        "19,monitor:${monitor_secondary}"
-        "20,monitor:${monitor_secondary}"
-        "21,monitor:${monitor_secondary}"
+        # "16,monitor:${monitor_secondary}"
+        # "17,monitor:${monitor_secondary}"
+        # "18,monitor:${monitor_secondary}"
+        # "19,monitor:${monitor_secondary}"
+        # "20,monitor:${monitor_secondary}"
+        # "21,monitor:${monitor_secondary}"
 
         "special:scratch,gapsout:60,on-created-empty:${terminal}"
       ];
@@ -290,7 +291,7 @@ in
       wallpaper = [
         "${monitor_main},${wallpaperPathTop}"
         "${monitor_bottom},${wallpaperPathBottom}"
-        "${monitor_secondary},${wallpaperPathTop}"
+        # "${monitor_secondary},${wallpaperPathTop}"
       ];
     };
   };
