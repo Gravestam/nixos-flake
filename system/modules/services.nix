@@ -6,6 +6,7 @@
 		picom.enable = false;
 		openssh.enable = true;
 		gvfs.enable = true;
+		tumbler.enable = true;
 		udisks2.enable = true;
 		displayManager.sddm.enable = false;
 		xserver = {

@@ -23,5 +23,6 @@
     ./virtualisation.nix
     ./flipperzero.nix
 		./ai.nix
+		./thunar.nix
   ];
 }

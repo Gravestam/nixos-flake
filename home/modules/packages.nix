@@ -59,5 +59,7 @@
 		robo3t
 		kdePackages.kdenlive
 		audacity
+		rclone
+		fdupes
 	];
 }

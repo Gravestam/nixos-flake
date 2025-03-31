@@ -28,7 +28,6 @@
     openssl # c_rehash openssl
     pkg-config # pkg-config
     wget # wget
-    xfce.thunar # thunar Thunar thunar-settings
     xdg-desktop-portal-gtk
     xdg-desktop-portal-wlr
     gnumake # make
