@@ -44,7 +44,7 @@ return {
 			sources = cmp.config.sources({
 				{ name = "nvim_lsp" },
 				{ name = "buffer", max_item_count = 5 },
-				{ name = "copilot" },
+				-- { name = "copilot" },
 				{ name = "path", max_item_count = 3 },
 				{ name = "luasnip", max_item_count = 3 },
 			}),
@@ -52,7 +52,7 @@ return {
 				format = lspkind.cmp_format({
 					maxwidth = 50,
 					ellipsis_char = "...",
-					symbol_map = { Copilot = "" },
+					symbol_map = { --[[ Copilot = "" ]] },
 				}),
 			},
 			window = {

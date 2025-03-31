@@ -22,7 +22,7 @@
     ./printer.nix
     ./virtualisation.nix
     ./flipperzero.nix
-		./ai.nix
+		# ./ai.nix
 		./thunar.nix
   ];
 }
