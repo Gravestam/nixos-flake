@@ -61,5 +61,6 @@
 		audacity
 		rclone
 		fdupes
+		notesnook
 	];
 }

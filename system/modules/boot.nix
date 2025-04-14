@@ -45,6 +45,7 @@
     blacklistedKernelModules = [ "nouveau" ];
 
     kernelPackages = pkgs.linuxPackages_latest;
+    # kernelPackages = pkgs.linuxPackages_6_12;
 
     # extraModulePackages = [ config.boot.kernelPackages.rtl88xxau-aircrack ];
   };
