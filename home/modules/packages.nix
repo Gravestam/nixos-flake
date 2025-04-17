@@ -32,7 +32,6 @@
 		rofi-rbw-wayland
 		wtype # wtype
 		ydotool
-		obsidian
 		prismlauncher
 		bitwarden
 		protonup-qt # protonup
@@ -62,5 +61,6 @@
 		rclone
 		fdupes
 		notesnook
+		toybox
 	];
 }
