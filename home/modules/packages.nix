@@ -7,7 +7,7 @@
 		pm2 # pm2-dev pm2-runtime pm2 pm2-docker
 		corepack # yarn yarnpkg pnpx pnpm
 		nodePackages_latest.node-gyp # node-gyp
-		signal-desktop # signal-desktop
+		signal-desktop-bin # signal-desktop
 		nixd
 		mongodb-tools
 		spotify
@@ -32,7 +32,6 @@
 		rofi-rbw-wayland
 		wtype # wtype
 		ydotool
-		obsidian
 		prismlauncher
 		bitwarden
 		protonup-qt # protonup
