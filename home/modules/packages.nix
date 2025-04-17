@@ -61,5 +61,6 @@
 		rclone
 		fdupes
 		notesnook
+		toybox
 	];
 }
